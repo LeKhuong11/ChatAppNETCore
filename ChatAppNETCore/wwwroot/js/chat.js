@@ -11,7 +11,7 @@ connection.on("ReceiveMessage", function (user, message) {
     // We can assign user-supplied strings to an element's textContent because it
     // is not interpreted as markup. If you're assigning in any other way, you 
     // should be aware of possible script injection concerns.
-    li.textContent = `${user} says ${message}`;
+    li.textContent = `${user} says: ${message}`;
 });
 
 connection.start().then(function () {
@@ -20,9 +20,22 @@ connection.start().then(function () {
     return console.error(err.toString());
 });
 
+
+document.getElementById("joinRoomButton").addEventListener("click", function (event) {
+    var room = document.getElementById("roomInput").value;
+    connection.invoke("JoinRoom", room).catch(function (err) {
+        return console.error(err.toString());
+    });
+    event.preventDefault();
+});
+
+
 document.getElementById("sendButton").addEventListener("click", function (event) {
     var user = document.getElementById("userInput").value;
+    var room = document.getElementById("roomInput").value;
     var message = document.getElementById("messageInput").value;
+
+    console.log(123123);
     connection.invoke("SendMessage", user, message).catch(function (err) {
         return console.error(err.toString());
     });

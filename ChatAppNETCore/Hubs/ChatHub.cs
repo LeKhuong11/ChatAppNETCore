@@ -6,12 +6,13 @@ namespace ChatAppNETCore.Hubs
     {
         public async Task SendMessage(string user, string message)
         {
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
+            await Clients.Group("room").SendAsync("ReceiveMessage", user, message);
         }
 
         public async Task JoinRoom(string room)
         {
             await Groups.AddToGroupAsync(Context.ConnectionId, room);
+            await Clients.Group(room).SendAsync("ReceiveMessage", "System", $"{Context.ConnectionId} has joined the room.");
         }
     }
 }
