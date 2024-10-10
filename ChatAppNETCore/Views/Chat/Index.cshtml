@@ -1,0 +1,181 @@
+﻿@model List<ChatAppNETCore.Models.C_User>
+
+
+@{
+    ViewData["Title"] = "Đăng nhập";
+}
+
+@if (@TempData["SuccessMessage"] != null)
+{
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript">
+        toastr.success('@TempData["SuccessMessage"]')
+    </script>
+}
+
+<div class="chat-container">
+    <div class="chat-list">
+        <h3>Chat List</h3>
+        <ul>
+ 
+            <li class="chat-user" onclick="openChatRoom(1)">John Doe</li>
+            <li class="chat-user" onclick="openChatRoom(2)">Jane Smith</li>
+            <li class="chat-user" onclick="openChatRoom(3)">Alex Johnson</li>
+        </ul>
+    </div>
+
+    <div class="chat-room">
+        <h3>Chat Room</h3>
+        <div id="chat-content">
+        </div>
+        <div class="message-input">
+            <input type="text" id="message" placeholder="Type a message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openChatRoom(userId) {
+        // Giả lập nội dung chat theo user
+        const chatContent = {
+            1: "Chat with John Doe...",
+            2: "Chat with Jane Smith...",
+            3: "Chat with Alex Johnson..."
+        };
+        createChat();
+        // Cập nhật nội dung chat dựa vào người dùng được click
+        document.getElementById("chat-content").innerHTML = chatContent[userId] || "No chat history available.";
+    }
+
+    function createChat(members) {
+        const chatData = {
+            Members: ["123123", "454666"]
+        };
+
+        fetch('/api/chat/create', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(chatData),
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Chat created successfully:', data);
+            })
+            .catch(error => {
+                console.error('Error creating chat:', error);
+            });
+    }
+
+    function sendMessage() {
+        const message = document.getElementById("message").value;
+
+        if (message.trim() !== "") {
+            // Hiển thị tin nhắn trong nội dung chat
+            const chatContent = document.getElementById("chat-content");
+            chatContent.innerHTML += `<div>${message}</div>`;
+
+            // Xóa nội dung input
+            document.getElementById("message").value = "";
+
+            // Cuộn xuống cuối tin nhắn
+            chatContent.scrollTop = chatContent.scrollHeight;
+        }
+    }
+</script>
+
+<style>
+    .chat-container {
+        display: flex;
+        height: 80vh;
+        border: 1px solid #ccc;
+    }
+
+
+    .chat-list {
+        width: 30%;
+        border-right: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f8f9fa;
+        overflow-y: auto;
+    }
+
+    .chat-list h3 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .chat-list ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .chat-user {
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .chat-user:hover {
+        background-color: #e9ecef;
+    }
+
+
+    .chat-room {
+        width: 70%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-room h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+
+    #chat-content {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        overflow-y: auto;
+    }
+
+
+    .message-input {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .message-input input {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+    .message-input button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .message-input button:hover {
+        background-color: #0056b3;
+    }
+</style>
