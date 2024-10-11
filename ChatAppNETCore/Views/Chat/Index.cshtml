@@ -1,8 +1,9 @@
-﻿@model List<ChatAppNETCore.Models.C_User>
-
+﻿@using System.Security.Claims
+@model List<ChatAppNETCore.Models.C_User>
 
 @{
     ViewData["Title"] = "Đăng nhập";
+    var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier).ToUpper();
 }
 
 @if (@TempData["SuccessMessage"] != null)
@@ -18,61 +19,96 @@
     <div class="chat-list">
         <h3>Chat List</h3>
         <ul>
- 
-            <li class="chat-user" onclick="openChatRoom(1)">John Doe</li>
-            <li class="chat-user" onclick="openChatRoom(2)">Jane Smith</li>
-            <li class="chat-user" onclick="openChatRoom(3)">Alex Johnson</li>
+            @foreach (var user in Model)
+            {
+                <li class="chat-user" onclick="openChatRoom('@user.Id', '@currentUserId')">@user.Name</li>
+            }
         </ul>
     </div>
 
     <div class="chat-room">
         <h3>Chat Room</h3>
-        <div id="chat-content">
-        </div>
-        <div class="message-input">
-            <input type="text" id="message" placeholder="Type a message..." />
-            <button onclick="sendMessage()">Send</button>
-        </div>
+        <div id="chat-content"></div>
+        
     </div>
 </div>
 
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+
 <script>
-    function openChatRoom(userId) {
-        // Giả lập nội dung chat theo user
-        const chatContent = {
-            1: "Chat with John Doe...",
-            2: "Chat with Jane Smith...",
-            3: "Chat with Alex Johnson..."
-        };
-        createChat();
-        // Cập nhật nội dung chat dựa vào người dùng được click
-        document.getElementById("chat-content").innerHTML = chatContent[userId] || "No chat history available.";
-    }
+    function openChatRoom(userId, currentUserId) {
 
-    function createChat(members) {
-        const chatData = {
-            Members: ["123123", "454666"]
-        };
-
-        fetch('/api/chat/create', {
+        fetch('api/ChatApi/FindOrCreateChatRoom', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(chatData),
+            body: JSON.stringify({ UserId: userId }),
+        }).then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
         })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
+            .then(data => {
+                const room = data.id;
+                console.log(data)
+
+                const chatContentDiv = document.getElementById('chat-content');
+                const chatRoom = document.querySelector('.chat-room');
+
+                chatContentDiv.innerHTML = '';
+
+                data.messages.forEach(message => {
+                    const messageElement = document.createElement('div');
+                    messageElement.classList.add('chat-message');
+
+                    messageElement.innerHTML = `
+                        <div class="message ${message.senderId == currentUserId ? "sent-by-me" : ""}">
+                            <p>${message.content}</p>
+                            <span>${new Date(message.createdAt).toLocaleString()}</span>
+                        </div>
+                    `;
+
+                    chatContentDiv.appendChild(messageElement);
+                });
+
+                chatRoom.innerHTML += `
+                        <div class="message-input">
+                            <input type="text" id="message" placeholder="Type a message..." />
+                            <button id="sendButton" onclick="sendMessages(${data.chatRoom.id})">Send</button>
+                        </div>
+                    `;
+
+
+                // connection.invoke("JoinRoom", room).catch(function (err) {
+                //     return console.error(err.toString());
+                // });
             })
+    }
+
+
+
+    function findOrCreateChat(userId) {
+
+        fetch('api/ChatApi/FindOrCreateChatRoom', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ UserId: userId }),
+        }).then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
             .then(data => {
                 console.log('Chat created successfully:', data);
             })
-            .catch(error => {
-                console.error('Error creating chat:', error);
-            });
+
     }
 
     function sendMessage() {
@@ -108,16 +144,16 @@
         overflow-y: auto;
     }
 
-    .chat-list h3 {
-        margin-top: 0;
-        text-align: center;
-        font-size: 1.5rem;
-    }
+        .chat-list h3 {
+            margin-top: 0;
+            text-align: center;
+            font-size: 1.5rem;
+        }
 
-    .chat-list ul {
-        list-style-type: none;
-        padding: 0;
-    }
+        .chat-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
     .chat-user {
         padding: 10px;
@@ -125,9 +161,9 @@
         border-bottom: 1px solid #ccc;
     }
 
-    .chat-user:hover {
-        background-color: #e9ecef;
-    }
+        .chat-user:hover {
+            background-color: #e9ecef;
+        }
 
 
     .chat-room {
@@ -135,6 +171,28 @@
         padding: 10px;
         display: flex;
         flex-direction: column;
+    }
+
+    .message {
+        background-color: aliceblue;
+        border-radius: 7px;
+        padding: 5px 15px;
+        width: fit-content;
+        margin-bottom: 10px;
+        max-width: 60%;
+    }
+
+        .message p {
+            margin: 0;
+        }
+
+        .message span {
+            font-size: 11px;
+        }
+
+    .sent-by-me {
+        margin-left: auto;
+        text-align: right;
     }
 
     .chat-room h3 {
@@ -158,24 +216,24 @@
         margin-top: 10px;
     }
 
-    .message-input input {
-        flex-grow: 1;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        margin-right: 10px;
-    }
+        .message-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
 
-    .message-input button {
-        padding: 10px 20px;
-        border: none;
-        background-color: #007bff;
-        color: white;
-        cursor: pointer;
-        border-radius: 4px;
-    }
+        .message-input button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
 
-    .message-input button:hover {
-        background-color: #0056b3;
-    }
+            .message-input button:hover {
+                background-color: #0056b3;
+            }
 </style>

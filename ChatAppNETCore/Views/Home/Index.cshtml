@@ -1,9 +1,23 @@
 ﻿
-<div class="container">
+<div>
+    <div class="row p-1">
+        <div class="col-1">Room</div>
+        <div class="col-5"><input type="text" id="roomInput" /></div>
+    </div>
+
     <div class="row p-1">
         <div class="col-1">User</div>
         <div class="col-5"><input type="text" id="userInput" /></div>
     </div>
+
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <input type="button" id="joinRoomButton" value="Join" />
+        </div>
+    </div>
+</div>
+
+<div class="container">
     <div class="row p-1">
         <div class="col-1">Message</div>
         <div class="col-5"><input type="text" class="w-100" id="messageInput" /></div>
@@ -26,4 +40,4 @@
 </div>
 
 <script src="~/js/signalr/dist/browser/signalr.js"></script>
-<script src="~/js/chat.js"></script>
+/<script src="~/js/chat.js"></script>
