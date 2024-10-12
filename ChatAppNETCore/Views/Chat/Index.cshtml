@@ -2,7 +2,7 @@
 @model List<ChatAppNETCore.Models.C_User>
 
 @{
-    ViewData["Title"] = "Đăng nhập";
+    ViewData["Title"] = "Chat screen";
     var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier).ToUpper();
 }
 
@@ -21,24 +21,30 @@
         <ul>
             @foreach (var user in Model)
             {
-                <li class="chat-user" onclick="openChatRoom('@user.Id', '@currentUserId')">@user.Name</li>
+                <li class="chat-user" onclick="openChatRoom('@user.Id', '@user.Name', '@currentUserId')">@user.Name</li>
             }
         </ul>
     </div>
 
     <div class="chat-room">
-        <h3>Chat Room</h3>
-        <div id="chat-content"></div>
-        
+        <h3 class="chat-with">Chat Room</h3>
+        <div id="chat-content">
+            
+        </div>
+        <input type="button" hidden id="sendButton" value="Send Message" />
     </div>
 </div>
 
 
+<script>
+    var currentUserId = '@currentUserId';
+</script>
+
 <script src="~/js/signalr/dist/browser/signalr.js"></script>
 <script src="~/js/chat.js"></script>
-
-<script>
-    function openChatRoom(userId, currentUserId) {
+ 
+<script type="text/javascript">
+    function openChatRoom(userId, userName, currentUserId) {
 
         fetch('api/ChatApi/FindOrCreateChatRoom', {
             method: 'POST',
@@ -59,73 +65,46 @@
                 const chatContentDiv = document.getElementById('chat-content');
                 const chatRoom = document.querySelector('.chat-room');
 
+                // Clear Chat content (if any)
                 chatContentDiv.innerHTML = '';
 
-                data.messages.forEach(message => {
-                    const messageElement = document.createElement('div');
-                    messageElement.classList.add('chat-message');
+                if (!data.messages || data.messages.length === 0) {
+                    chatContentDiv.innerHTML = 'Chưa có tin nhắn';
+                } else {
+                    const chatWith = document.querySelector('.chat-with');
+                    chatWith.innerHTML = `Chat with ${userName}`;
 
-                    messageElement.innerHTML = `
-                        <div class="message ${message.senderId == currentUserId ? "sent-by-me" : ""}">
-                            <p>${message.content}</p>
-                            <span>${new Date(message.createdAt).toLocaleString()}</span>
-                        </div>
-                    `;
+                    // Add each message to chatContentDiv
+                    data.messages.forEach(message => {
+                        const messageElement = document.createElement('div');
+                        messageElement.classList.add('chat-message');
 
-                    chatContentDiv.appendChild(messageElement);
-                });
+                        messageElement.innerHTML = `
+                    <div class="message ${message.senderId == currentUserId ? "sent-by-me" : ""}">
+                        <p>${message.content}</p>
+                        <span>${new Date(message.createdAt).toLocaleString()}</span>
+                    </div>
+                `;
 
+                        chatContentDiv.appendChild(messageElement);
+                    });
+
+                    // Scroll to the bottom
+                    chatContentDiv.scrollTop = chatContentDiv.scrollHeight;
+                }
+
+                // HTML nhập tin nhắn
                 chatRoom.innerHTML += `
-                        <div class="message-input">
-                            <input type="text" id="message" placeholder="Type a message..." />
-                            <button id="sendButton" onclick="sendMessages(${data.chatRoom.id})">Send</button>
-                        </div>
-                    `;
+            <div class="message-input">
+                <input type="text" id="messageInput" placeholder="Type a message..." />
+                <button id="sendMessageButton" onclick="sendMessages(${data.chatRoom.id})">Send</button>
+            </div>
+        `;
 
-
-                // connection.invoke("JoinRoom", room).catch(function (err) {
-                //     return console.error(err.toString());
-                // });
+                joinRoom(data.chatRoom.id);
             })
     }
 
-
-
-    function findOrCreateChat(userId) {
-
-        fetch('api/ChatApi/FindOrCreateChatRoom', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ UserId: userId }),
-        }).then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-            .then(data => {
-                console.log('Chat created successfully:', data);
-            })
-
-    }
-
-    function sendMessage() {
-        const message = document.getElementById("message").value;
-
-        if (message.trim() !== "") {
-            // Hiển thị tin nhắn trong nội dung chat
-            const chatContent = document.getElementById("chat-content");
-            chatContent.innerHTML += `<div>${message}</div>`;
-
-            // Xóa nội dung input
-            document.getElementById("message").value = "";
-
-            // Cuộn xuống cuối tin nhắn
-            chatContent.scrollTop = chatContent.scrollHeight;
-        }
-    }
 </script>
 
 <style>
@@ -208,6 +187,19 @@
         border: 1px solid #ccc;
         background-color: #fff;
         overflow-y: auto;
+        max-height: 100%;
+    }
+
+    .user-joined {
+        display: flex;
+        justify-content: center;
+    }
+
+    .user-joined p {
+        border-radius: 10px;
+        padding: 4px 7px;
+        background: #f6f6f6;
+        font-size: 11px;
     }
 
 

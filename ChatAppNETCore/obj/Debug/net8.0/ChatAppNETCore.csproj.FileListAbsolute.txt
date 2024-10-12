@@ -297,3 +297,4 @@ D:\Workspace\C#\ChatAppNETCore\ChatAppNETCore\obj\Debug\net8.0\refint\ChatAppNET
 D:\Workspace\C#\ChatAppNETCore\ChatAppNETCore\obj\Debug\net8.0\ChatAppNETCore.pdb
 D:\Workspace\C#\ChatAppNETCore\ChatAppNETCore\obj\Debug\net8.0\ChatAppNETCore.genruntimeconfig.cache
 D:\Workspace\C#\ChatAppNETCore\ChatAppNETCore\obj\Debug\net8.0\ref\ChatAppNETCore.dll
+D:\C#\ChatAppNETCore\ChatAppNETCore\obj\Debug\net8.0\ChatAppNETCore.sourcelink.json

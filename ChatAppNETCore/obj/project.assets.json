@@ -4259,19 +4259,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\11lek\\.nuget\\packages\\": {}
+    "C:\\Users\\Khuong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\ChatAppNETCore.csproj",
+      "projectUniqueName": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\ChatAppNETCore.csproj",
       "projectName": "ChatAppNETCore",
-      "projectPath": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\ChatAppNETCore.csproj",
-      "packagesPath": "C:\\Users\\11lek\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\",
+      "projectPath": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\ChatAppNETCore.csproj",
+      "packagesPath": "C:\\Users\\Khuong\\.nuget\\packages\\",
+      "outputPath": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\11lek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Khuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

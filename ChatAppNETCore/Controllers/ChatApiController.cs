@@ -43,14 +43,18 @@ namespace ChatAppNETCore.Controllers
             // Nếu chưa có phòng chat, tạo phòng chat mới
             var newChatRoom = new C_Chat
             {
-                Members = new List<string> { currentUserId, request.UserId },
+                Members = new List<string> { currentUserId.ToUpper(), request.UserId.ToUpper() },
                 CreatedAt = DateTime.Now
             };
 
             _context.C_Chats.Add(newChatRoom);
             await _context.SaveChangesAsync();
 
-            return Ok(newChatRoom);
+            return Ok(new
+            {
+                ChatRoom = newChatRoom,
+                Messages = (List<string>)null
+            });
         }
 
 

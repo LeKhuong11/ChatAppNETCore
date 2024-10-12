@@ -1,18 +1,44 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿using ChatAppNETCore.Models;
+using Microsoft.AspNetCore.SignalR;
+using System.Security.Claims;
 
 namespace ChatAppNETCore.Hubs
 {
     public class ChatHub : Hub
     {
-        public async Task SendMessage(string user, string message)
+        private readonly ChatAppContext _context;
+
+        public ChatHub(ChatAppContext context)
         {
-            await Clients.Group("room").SendAsync("ReceiveMessage", user, message);
+            _context = context;
+        }
+
+
+        public async Task SendMessage(string room, string message)
+        {
+            string userName = Context.User.Identity.Name;
+            string userId = Context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            var chatMessage = new C_Message
+            {
+                ChatId = room,
+                SenderId = userId.ToUpper(),
+                Content = message,
+                CreatedAt = DateTime.UtcNow,
+            };
+
+            _context.C_Messages.Add(chatMessage);
+            await _context.SaveChangesAsync();
+
+            await Clients.Group(room).SendAsync("ReceiveMessage", chatMessage);
         }
 
         public async Task JoinRoom(string room)
         {
+            string userName = Context.User.Identity.Name;
+
             await Groups.AddToGroupAsync(Context.ConnectionId, room);
-            await Clients.Group(room).SendAsync("ReceiveMessage", "System", $"{Context.ConnectionId} has joined the room.");
+            await Clients.Group(room).SendAsync("JoinRoomMessage", userName);
         }
     }
 }
