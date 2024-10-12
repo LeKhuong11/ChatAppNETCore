@@ -80,11 +80,11 @@
                         messageElement.classList.add('chat-message');
 
                         messageElement.innerHTML = `
-                    <div class="message ${message.senderId == currentUserId ? "sent-by-me" : ""}">
-                        <p>${message.content}</p>
-                        <span>${new Date(message.createdAt).toLocaleString()}</span>
-                    </div>
-                `;
+                            <div class="message ${message.senderId == currentUserId ? "sent-by-me" : ""}">
+                                <p>${message.content}</p>
+                                <span>${new Date(message.createdAt).toLocaleString()}</span>
+                            </div>
+                        `;
 
                         chatContentDiv.appendChild(messageElement);
                     });
@@ -95,11 +95,11 @@
 
                 // HTML nhập tin nhắn
                 chatRoom.innerHTML += `
-            <div class="message-input">
-                <input type="text" id="messageInput" placeholder="Type a message..." />
-                <button id="sendMessageButton" onclick="sendMessages(${data.chatRoom.id})">Send</button>
-            </div>
-        `;
+                    <div class="message-input">
+                        <input type="text" id="messageInput" placeholder="Type a message..." />
+                        <button id="sendMessageButton" onclick="sendMessages(${data.chatRoom.id})">Send</button>
+                    </div>
+                `;
 
                 joinRoom(data.chatRoom.id);
             })
