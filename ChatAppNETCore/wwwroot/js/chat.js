@@ -18,10 +18,10 @@ connection.on("ReceiveMessage", (message) => {
     chatContentDiv.appendChild(messageElement);
 });
 
-connection.on("JoinRoomMessage", (userName) => {
+connection.on("JoinRoomMessage", (userName, userId) => {
     const html = `
         <div class="user-joined">
-            <p><b>${userName}</b> has joined the room</p>
+            <p><b>${userId == currentUserId ? "You" : userName}</b> has joined the room</p>
         </div>
     `;
 

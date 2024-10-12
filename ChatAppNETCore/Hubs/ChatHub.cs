@@ -36,9 +36,18 @@ namespace ChatAppNETCore.Hubs
         public async Task JoinRoom(string room)
         {
             string userName = Context.User.Identity.Name;
+            string userId = Context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
             await Groups.AddToGroupAsync(Context.ConnectionId, room);
-            await Clients.Group(room).SendAsync("JoinRoomMessage", userName);
+            await Clients.Group(room).SendAsync("JoinRoomMessage", userName, userId.ToUpper());
+        }
+
+        public async Task LeaveRoom(string room)
+        {
+            string userName = Context.User.Identity.Name;
+
+            await Groups.RemoveFromGroupAsync(Context.ConnectionId, room);
+            await Clients.Group(room).SendAsync("LeaveRoomMessage", userName);
         }
     }
 }
