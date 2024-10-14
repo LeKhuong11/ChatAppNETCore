@@ -21,7 +21,7 @@
         <ul>
             @foreach (var user in Model)
             {
-                <li class="chat-user" onclick="openChatRoom('@user.Id', '@user.Name', '@currentUserId')">@user.Name</li>
+                <li class="chat-user" onclick="openChatRoom('@user.Id', '@user.Name', '@currentUserId', event)">@user.Name</li>
             }
         </ul>
     </div>
@@ -31,7 +31,26 @@
         <div id="chat-content">
             
         </div>
+        <div class="chat-input"></div>
         <input type="button" hidden id="sendButton" value="Send Message" />
+    </div>
+
+
+    
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header border-0">
+                <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#007aff"></rect>
+                </svg>
+                <strong class="me-auto text-black">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body bg-white">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
     </div>
 </div>
 
@@ -45,6 +64,14 @@
  
 <script type="text/javascript">
     function openChatRoom(userId, userName, currentUserId) {
+        const allChatUsers = document.querySelectorAll('.chat-user');
+
+        allChatUsers.forEach(user => {
+            user.classList.remove('active');
+        });
+
+        const clickedUser = event.currentTarget;
+        clickedUser.classList.add('active');
 
         fetch('api/ChatApi/FindOrCreateChatRoom', {
             method: 'POST',
@@ -64,9 +91,11 @@
 
                 const chatContentDiv = document.getElementById('chat-content');
                 const chatRoom = document.querySelector('.chat-room');
+                const chatInput = document.querySelector('.chat-input');
 
                 // Clear Chat content (if any)
                 chatContentDiv.innerHTML = '';
+                chatInput.innerHTML = '';
 
                 if (!data.messages || data.messages.length === 0) {
                     chatContentDiv.innerHTML = 'Chưa có tin nhắn';
@@ -94,10 +123,12 @@
                 }
 
                 // HTML nhập tin nhắn
-                chatRoom.innerHTML += `
-                    <div class="message-input">
-                        <input type="text" id="messageInput" placeholder="Type a message..." />
-                        <button id="sendMessageButton" onclick="sendMessages(${data.chatRoom.id})">Send</button>
+                chatInput.innerHTML += `
+                    <div>
+                        <form id="form-message" class="message-input" action="#" onsubmit="sendMessages(${data.chatRoom.id}, '${userId}', event)">
+                            <input type="text" id="messageInput" placeholder="Type a message..." />
+                            <button type="submit" id="sendMessageButton" onclick="sendMessages(${data.chatRoom.id}, '${userId}')">Send</button>
+                        </form>
                     </div>
                 `;
 
@@ -142,6 +173,13 @@
 
         .chat-user:hover {
             background-color: #e9ecef;
+        }
+
+        .active {
+            background-color: #77CDFF;
+            color: #fff;
+            border-radius: 4px;
+            font-weight: bold;
         }
 
 

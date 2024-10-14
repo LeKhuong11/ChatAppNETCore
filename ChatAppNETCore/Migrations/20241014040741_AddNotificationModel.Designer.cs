@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChatAppNETCore.Migrations
 {
     [DbContext(typeof(ChatAppContext))]
-    [Migration("20241010140149_ChatApp")]
-    partial class ChatApp
+    [Migration("20241014040741_AddNotificationModel")]
+    partial class AddNotificationModel
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,6 +71,36 @@ namespace ChatAppNETCore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("C_Messages");
+                });
+
+            modelBuilder.Entity("ChatAppNETCore.Models.C_Notification", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MessageId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReceiveId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SenderId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("C_Notification");
                 });
 
             modelBuilder.Entity("ChatAppNETCore.Models.C_User", b =>

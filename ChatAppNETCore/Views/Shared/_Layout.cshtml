@@ -32,10 +32,27 @@
             </div>
             @if (User.Identity.IsAuthenticated)
             {
-                // <p>@User.Identity.Name</p>
-
-                <div class="logout">
-                    <a class="nav-link text-dark" href="/Auth/Logout">Logout</a>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item dropdown d-md-down-none show">
+                            <button type="button" class="btn btn-primary position-relative">
+                                Inbox
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark">@User.Identity.Name</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                           <span> | </span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="px-2" href="/Auth/Logout">Logout</a>
+                        </li>
+                    </ul>
                 </div>
             }
         </nav>

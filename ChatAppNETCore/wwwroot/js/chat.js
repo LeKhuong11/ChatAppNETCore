@@ -2,6 +2,12 @@
 
 var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
 
+connection.start().then(function () {
+    console.log('connected');
+}).catch(function (err) {
+    return console.error(err.toString());
+});
+
 
 connection.on("ReceiveMessage", (message) => {
     const chatContentDiv = document.getElementById('chat-content');
@@ -16,6 +22,19 @@ connection.on("ReceiveMessage", (message) => {
     `;
 
     chatContentDiv.appendChild(messageElement);
+});
+
+connection.on("NotificationMessage", (notification, message) => {
+    console.log(notification);
+
+
+    //document.getElementById('toastMessageContent').innerText = notification.message;
+    //document.getElementById('toastTime').innerText = new Date().toLocaleTimeString();
+
+    // Lấy toast element
+    const toastElement = document.getElementById('liveToast');
+    const toast = new bootstrap.Toast(toastElement);
+    toast.show();
 });
 
 connection.on("JoinRoomMessage", (userName, userId) => {
@@ -37,17 +56,11 @@ connection.on("JoinRoomMessage", (userName, userId) => {
     });
 })
     
-connection.start().then(function () {
-    console.log('connected')
-}).catch(function (err) {
-    return console.error(err.toString());
-});
-
-    
-function sendMessages(room) {
+function sendMessages(room, toUserId, event) {
+    event.preventDefault()
     var message = document.getElementById("messageInput");
 
-    connection.invoke("SendMessage", `${room}`, message.value).then(() => {
+    connection.invoke("SendMessage", `${room}`, message.value, toUserId.toUpperCase()).then(() => {
         const chatContentDiv = document.getElementById('chat-content');
         chatContentDiv.scrollTo({
             top: chatContentDiv.scrollHeight,

@@ -12,8 +12,6 @@ namespace ChatAppNETCore.Models
 
         public DateTime CreatedAt { get; set; }
 
-
-
         public C_Chat()
         {
             Members = new List<string>();
