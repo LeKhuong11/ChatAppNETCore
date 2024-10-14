@@ -62,7 +62,7 @@ namespace ChatAppNETCore.Hubs
             _context.C_Messages.Add(chatMessage);
             await _context.SaveChangesAsync();
             await Clients.Group(room).SendAsync("ReceiveMessage", chatMessage);
-            await this.SendNotification(chatMessage, toUserId, room);
+            await this.SendNotification(chatMessage, userName, toUserId, room);
         }
 
         public async Task JoinRoom(string room)
@@ -82,7 +82,7 @@ namespace ChatAppNETCore.Hubs
             await Clients.Group(room).SendAsync("LeaveRoomMessage", userName);
         }
 
-        public async Task SendNotification(C_Message message, string toUserId,  string room)
+        public async Task SendNotification(C_Message message, string senderName, string toUserId, string room)
         {
             var notification = new C_Notification
             {
@@ -96,7 +96,7 @@ namespace ChatAppNETCore.Hubs
 
             if (_onlineUsers.TryGetValue(toUserId, out var connectionId))
             {
-                await Clients.Client(connectionId).SendAsync("NotificationMessage", notification, message);
+                await Clients.Client(connectionId).SendAsync("NotificationMessage", notification, message, senderName);
             }
         }
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6ddXGD7cH9sxkG/ZDoezsE39jiiRik9IAAYWjhxPS8Y=",
+  "Hash": "n1hL1/j0Xa3iCXQmcwvJb9SIIl/WIPULGRRd68KGSYE=",
   "Source": "ChatAppNETCore",
   "BasePath": "_content/ChatAppNETCore",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ChatAppNETCore\\wwwroot",
       "Source": "ChatAppNETCore",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ChatAppNETCore.styles.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ChatAppNETCore.styles.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "ChatAppNETCore.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ChatAppNETCore.styles.css"
+      "OriginalItemSpec": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ChatAppNETCore.styles.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ChatAppNETCore.bundle.scp.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ChatAppNETCore.bundle.scp.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "ChatAppNETCore.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ChatAppNETCore.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ChatAppNETCore.bundle.scp.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\css\\site.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\favicon.ico",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\chat.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\chat.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/chat.js",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\js\\chat.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/browser/signalr.js",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/browser/signalr.min.js",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\abortcontroller.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\abortcontroller.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/abortcontroller.js",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\abortcontroller.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\abortcontroller.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\abortcontroller.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/abortcontroller.js.map",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\abortcontroller.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\accesstokenhttpclient.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\accesstokenhttpclient.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/accesstokenhttpclient.js",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\accesstokenhttpclient.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\accesstokenhttpclient.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\accesstokenhttpclient.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/accesstokenhttpclient.js.map",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\accesstokenhttpclient.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\browser-index.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\browser-index.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/browser-index.js",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\browser-index.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\browser-index.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\browser-index.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/browser-index.js.map",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\browser-index.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\defaulthttpclient.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\defaulthttpclient.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/defaulthttpclient.js",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\defaulthttpclient.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\defaulthttpclient.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\defaulthttpclient.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/defaulthttpclient.js.map",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\defaulthttpclient.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\defaultreconnectpolicy.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\defaultreconnectpolicy.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/defaultreconnectpolicy.js",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\defaultreconnectpolicy.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\defaultreconnectpolicy.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\defaultreconnectpolicy.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/defaultreconnectpolicy.js.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\defaultreconnectpolicy.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\errors.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\errors.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/errors.js",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\errors.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\errors.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\errors.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/errors.js.map",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\errors.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\fetchhttpclient.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\fetchhttpclient.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/fetchhttpclient.js",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\fetchhttpclient.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\fetchhttpclient.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\fetchhttpclient.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/fetchhttpclient.js.map",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\fetchhttpclient.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\handshakeprotocol.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\handshakeprotocol.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/handshakeprotocol.js",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\handshakeprotocol.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\handshakeprotocol.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\handshakeprotocol.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/handshakeprotocol.js.map",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\handshakeprotocol.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\headernames.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\headernames.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/headernames.js",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\headernames.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\headernames.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\headernames.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/headernames.js.map",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\headernames.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\httpclient.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\httpclient.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/httpclient.js",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\httpclient.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\httpclient.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\httpclient.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/httpclient.js.map",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\httpclient.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\httpconnection.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\httpconnection.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/httpconnection.js",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\httpconnection.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\httpconnection.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\httpconnection.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/httpconnection.js.map",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\httpconnection.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\hubconnection.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\hubconnection.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/hubconnection.js",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\hubconnection.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\hubconnection.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\hubconnection.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/hubconnection.js.map",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\hubconnection.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\hubconnectionbuilder.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\hubconnectionbuilder.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/hubconnectionbuilder.js",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\hubconnectionbuilder.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\hubconnectionbuilder.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\hubconnectionbuilder.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/hubconnectionbuilder.js.map",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\hubconnectionbuilder.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\iconnection.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\iconnection.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/iconnection.js",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\iconnection.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\iconnection.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\iconnection.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/iconnection.js.map",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\iconnection.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ihttpconnectionoptions.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ihttpconnectionoptions.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/ihttpconnectionoptions.js",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\ihttpconnectionoptions.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ihttpconnectionoptions.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ihttpconnectionoptions.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/ihttpconnectionoptions.js.map",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\ihttpconnectionoptions.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ihubprotocol.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ihubprotocol.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/ihubprotocol.js",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\ihubprotocol.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ihubprotocol.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ihubprotocol.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/ihubprotocol.js.map",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\ihubprotocol.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ilogger.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ilogger.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/ilogger.js",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\ilogger.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ilogger.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\ilogger.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/ilogger.js.map",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\ilogger.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\index.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\index.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/index.js",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\index.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\index.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\index.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/index.js.map",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\index.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\iretrypolicy.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\iretrypolicy.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/iretrypolicy.js",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\iretrypolicy.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\iretrypolicy.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\iretrypolicy.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/iretrypolicy.js.map",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\iretrypolicy.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\istatefulreconnectoptions.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\istatefulreconnectoptions.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/istatefulreconnectoptions.js",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\istatefulreconnectoptions.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\istatefulreconnectoptions.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\istatefulreconnectoptions.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/istatefulreconnectoptions.js.map",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\istatefulreconnectoptions.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\itransport.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\itransport.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/itransport.js",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\itransport.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\itransport.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\itransport.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/itransport.js.map",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\itransport.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\jsonhubprotocol.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\jsonhubprotocol.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/jsonhubprotocol.js",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\jsonhubprotocol.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\jsonhubprotocol.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\jsonhubprotocol.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/jsonhubprotocol.js.map",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\jsonhubprotocol.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\loggers.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\loggers.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/loggers.js",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\loggers.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\loggers.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\loggers.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/loggers.js.map",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\loggers.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\longpollingtransport.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\longpollingtransport.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/longpollingtransport.js",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\longpollingtransport.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\longpollingtransport.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\longpollingtransport.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/longpollingtransport.js.map",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\longpollingtransport.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\messagebuffer.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\messagebuffer.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/messagebuffer.js",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\messagebuffer.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\messagebuffer.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\messagebuffer.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/messagebuffer.js.map",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\messagebuffer.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\polyfills.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\polyfills.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/polyfills.js",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\polyfills.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\polyfills.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\polyfills.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/polyfills.js.map",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\polyfills.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\serversenteventstransport.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\serversenteventstransport.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/serversenteventstransport.js",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\serversenteventstransport.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\serversenteventstransport.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\serversenteventstransport.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/serversenteventstransport.js.map",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\serversenteventstransport.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\stream.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\stream.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/stream.js",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\stream.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\stream.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\stream.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/stream.js.map",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\stream.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\subject.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\subject.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/subject.js",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\subject.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\subject.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\subject.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/subject.js.map",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\subject.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\textmessageformat.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\textmessageformat.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/textmessageformat.js",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\textmessageformat.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\textmessageformat.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\textmessageformat.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/textmessageformat.js.map",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\textmessageformat.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\utils.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\utils.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/utils.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\utils.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\utils.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\utils.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/utils.js.map",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\utils.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\websockettransport.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\websockettransport.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/websockettransport.js",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\websockettransport.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\websockettransport.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\websockettransport.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/websockettransport.js.map",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\websockettransport.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\xhrhttpclient.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\xhrhttpclient.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/xhrhttpclient.js",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\xhrhttpclient.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\xhrhttpclient.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\cjs\\xhrhttpclient.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/cjs/xhrhttpclient.js.map",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\cjs\\xhrhttpclient.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\abortcontroller.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\abortcontroller.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/abortcontroller.d.ts",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\abortcontroller.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\abortcontroller.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\abortcontroller.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/abortcontroller.js",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\abortcontroller.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\abortcontroller.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\abortcontroller.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/abortcontroller.js.map",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\abortcontroller.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\accesstokenhttpclient.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\accesstokenhttpclient.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/accesstokenhttpclient.d.ts",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\accesstokenhttpclient.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\accesstokenhttpclient.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\accesstokenhttpclient.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/accesstokenhttpclient.js",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\accesstokenhttpclient.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\accesstokenhttpclient.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\accesstokenhttpclient.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/accesstokenhttpclient.js.map",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\accesstokenhttpclient.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/browser-index.d.ts",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\browser-index.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/browser-index.js",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\browser-index.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/browser-index.js.map",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\browser-index.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaulthttpclient.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaulthttpclient.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/defaulthttpclient.d.ts",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\defaulthttpclient.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaulthttpclient.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaulthttpclient.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/defaulthttpclient.js",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\defaulthttpclient.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaulthttpclient.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaulthttpclient.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/defaulthttpclient.js.map",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\defaulthttpclient.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaultreconnectpolicy.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaultreconnectpolicy.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/defaultreconnectpolicy.d.ts",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\defaultreconnectpolicy.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaultreconnectpolicy.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaultreconnectpolicy.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/defaultreconnectpolicy.js",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\defaultreconnectpolicy.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaultreconnectpolicy.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\defaultreconnectpolicy.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/defaultreconnectpolicy.js.map",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\defaultreconnectpolicy.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\errors.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\errors.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/errors.d.ts",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\errors.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\errors.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\errors.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/errors.js",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\errors.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\errors.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\errors.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/errors.js.map",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\errors.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\fetchhttpclient.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\fetchhttpclient.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/fetchhttpclient.d.ts",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\fetchhttpclient.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\fetchhttpclient.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\fetchhttpclient.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/fetchhttpclient.js",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\fetchhttpclient.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\fetchhttpclient.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\fetchhttpclient.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/fetchhttpclient.js.map",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\fetchhttpclient.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\handshakeprotocol.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\handshakeprotocol.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/handshakeprotocol.d.ts",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\handshakeprotocol.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\handshakeprotocol.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\handshakeprotocol.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/handshakeprotocol.js",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\handshakeprotocol.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\handshakeprotocol.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\handshakeprotocol.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/handshakeprotocol.js.map",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\handshakeprotocol.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\headernames.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\headernames.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/headernames.d.ts",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\headernames.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\headernames.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\headernames.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/headernames.js",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\headernames.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\headernames.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\headernames.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/headernames.js.map",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\headernames.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpclient.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpclient.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/httpclient.d.ts",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\httpclient.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpclient.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpclient.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/httpclient.js",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\httpclient.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpclient.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpclient.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/httpclient.js.map",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\httpclient.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpconnection.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpconnection.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/httpconnection.d.ts",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\httpconnection.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpconnection.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpconnection.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/httpconnection.js",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\httpconnection.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpconnection.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\httpconnection.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/httpconnection.js.map",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\httpconnection.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnection.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnection.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/hubconnection.d.ts",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\hubconnection.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnection.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnection.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/hubconnection.js",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\hubconnection.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnection.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnection.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/hubconnection.js.map",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\hubconnection.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnectionbuilder.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnectionbuilder.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/hubconnectionbuilder.d.ts",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\hubconnectionbuilder.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnectionbuilder.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnectionbuilder.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/hubconnectionbuilder.js",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\hubconnectionbuilder.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnectionbuilder.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\hubconnectionbuilder.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/hubconnectionbuilder.js.map",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\hubconnectionbuilder.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iconnection.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iconnection.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/iconnection.d.ts",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\iconnection.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iconnection.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iconnection.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/iconnection.js",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\iconnection.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iconnection.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iconnection.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/iconnection.js.map",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\iconnection.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihttpconnectionoptions.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihttpconnectionoptions.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/ihttpconnectionoptions.d.ts",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\ihttpconnectionoptions.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihttpconnectionoptions.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihttpconnectionoptions.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/ihttpconnectionoptions.js",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\ihttpconnectionoptions.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihttpconnectionoptions.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihttpconnectionoptions.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/ihttpconnectionoptions.js.map",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\ihttpconnectionoptions.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihubprotocol.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihubprotocol.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/ihubprotocol.d.ts",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\ihubprotocol.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihubprotocol.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihubprotocol.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/ihubprotocol.js",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\ihubprotocol.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihubprotocol.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ihubprotocol.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/ihubprotocol.js.map",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\ihubprotocol.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ilogger.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ilogger.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/ilogger.d.ts",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\ilogger.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ilogger.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ilogger.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/ilogger.js",
       "AssetKind": "All",
@@ -2354,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\ilogger.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ilogger.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\ilogger.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/ilogger.js.map",
       "AssetKind": "All",
@@ -2373,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\ilogger.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\index.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\index.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/index.d.ts",
       "AssetKind": "All",
@@ -2392,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\index.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\index.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\index.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/index.js",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\index.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\index.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\index.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/index.js.map",
       "AssetKind": "All",
@@ -2430,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\index.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iretrypolicy.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iretrypolicy.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/iretrypolicy.d.ts",
       "AssetKind": "All",
@@ -2449,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\iretrypolicy.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iretrypolicy.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iretrypolicy.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/iretrypolicy.js",
       "AssetKind": "All",
@@ -2468,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\iretrypolicy.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iretrypolicy.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\iretrypolicy.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/iretrypolicy.js.map",
       "AssetKind": "All",
@@ -2487,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\iretrypolicy.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\istatefulreconnectoptions.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\istatefulreconnectoptions.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/istatefulreconnectoptions.d.ts",
       "AssetKind": "All",
@@ -2506,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\istatefulreconnectoptions.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\istatefulreconnectoptions.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\istatefulreconnectoptions.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/istatefulreconnectoptions.js",
       "AssetKind": "All",
@@ -2525,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\istatefulreconnectoptions.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\istatefulreconnectoptions.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\istatefulreconnectoptions.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/istatefulreconnectoptions.js.map",
       "AssetKind": "All",
@@ -2544,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\istatefulreconnectoptions.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\itransport.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\itransport.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/itransport.d.ts",
       "AssetKind": "All",
@@ -2563,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\itransport.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\itransport.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\itransport.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/itransport.js",
       "AssetKind": "All",
@@ -2582,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\itransport.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\itransport.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\itransport.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/itransport.js.map",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\itransport.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\jsonhubprotocol.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\jsonhubprotocol.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/jsonhubprotocol.d.ts",
       "AssetKind": "All",
@@ -2620,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\jsonhubprotocol.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\jsonhubprotocol.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\jsonhubprotocol.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/jsonhubprotocol.js",
       "AssetKind": "All",
@@ -2639,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\jsonhubprotocol.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\jsonhubprotocol.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\jsonhubprotocol.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/jsonhubprotocol.js.map",
       "AssetKind": "All",
@@ -2658,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\jsonhubprotocol.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\loggers.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\loggers.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/loggers.d.ts",
       "AssetKind": "All",
@@ -2677,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\loggers.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\loggers.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\loggers.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/loggers.js",
       "AssetKind": "All",
@@ -2696,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\loggers.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\loggers.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\loggers.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/loggers.js.map",
       "AssetKind": "All",
@@ -2715,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\loggers.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\longpollingtransport.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\longpollingtransport.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/longpollingtransport.d.ts",
       "AssetKind": "All",
@@ -2734,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\longpollingtransport.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\longpollingtransport.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\longpollingtransport.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/longpollingtransport.js",
       "AssetKind": "All",
@@ -2753,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\longpollingtransport.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\longpollingtransport.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\longpollingtransport.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/longpollingtransport.js.map",
       "AssetKind": "All",
@@ -2772,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\longpollingtransport.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\messagebuffer.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\messagebuffer.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/messagebuffer.d.ts",
       "AssetKind": "All",
@@ -2791,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\messagebuffer.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\messagebuffer.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\messagebuffer.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/messagebuffer.js",
       "AssetKind": "All",
@@ -2810,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\messagebuffer.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\messagebuffer.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\messagebuffer.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/messagebuffer.js.map",
       "AssetKind": "All",
@@ -2829,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\messagebuffer.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\polyfills.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\polyfills.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/polyfills.d.ts",
       "AssetKind": "All",
@@ -2848,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\polyfills.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\polyfills.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\polyfills.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/polyfills.js",
       "AssetKind": "All",
@@ -2867,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\polyfills.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\polyfills.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\polyfills.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/polyfills.js.map",
       "AssetKind": "All",
@@ -2886,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\polyfills.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\serversenteventstransport.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\serversenteventstransport.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/serversenteventstransport.d.ts",
       "AssetKind": "All",
@@ -2905,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\serversenteventstransport.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\serversenteventstransport.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\serversenteventstransport.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/serversenteventstransport.js",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\serversenteventstransport.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\serversenteventstransport.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\serversenteventstransport.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/serversenteventstransport.js.map",
       "AssetKind": "All",
@@ -2943,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\serversenteventstransport.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\stream.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\stream.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/stream.d.ts",
       "AssetKind": "All",
@@ -2962,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\stream.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\stream.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\stream.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/stream.js",
       "AssetKind": "All",
@@ -2981,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\stream.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\stream.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\stream.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/stream.js.map",
       "AssetKind": "All",
@@ -3000,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\stream.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\subject.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\subject.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/subject.d.ts",
       "AssetKind": "All",
@@ -3019,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\subject.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\subject.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\subject.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/subject.js",
       "AssetKind": "All",
@@ -3038,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\subject.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\subject.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\subject.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/subject.js.map",
       "AssetKind": "All",
@@ -3057,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\subject.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\textmessageformat.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\textmessageformat.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/textmessageformat.d.ts",
       "AssetKind": "All",
@@ -3076,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\textmessageformat.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\textmessageformat.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\textmessageformat.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/textmessageformat.js",
       "AssetKind": "All",
@@ -3095,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\textmessageformat.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\textmessageformat.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\textmessageformat.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/textmessageformat.js.map",
       "AssetKind": "All",
@@ -3114,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\textmessageformat.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\utils.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\utils.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/utils.d.ts",
       "AssetKind": "All",
@@ -3133,10 +3133,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\utils.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\utils.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\utils.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/utils.js",
       "AssetKind": "All",
@@ -3152,10 +3152,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\utils.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\utils.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\utils.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/utils.js.map",
       "AssetKind": "All",
@@ -3171,10 +3171,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\utils.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\websockettransport.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\websockettransport.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/websockettransport.d.ts",
       "AssetKind": "All",
@@ -3190,10 +3190,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\websockettransport.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\websockettransport.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\websockettransport.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/websockettransport.js",
       "AssetKind": "All",
@@ -3209,10 +3209,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\websockettransport.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\websockettransport.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\websockettransport.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/websockettransport.js.map",
       "AssetKind": "All",
@@ -3228,10 +3228,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\websockettransport.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\xhrhttpclient.d.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\xhrhttpclient.d.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/xhrhttpclient.d.ts",
       "AssetKind": "All",
@@ -3247,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\xhrhttpclient.d.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\xhrhttpclient.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\xhrhttpclient.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/xhrhttpclient.js",
       "AssetKind": "All",
@@ -3266,10 +3266,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\xhrhttpclient.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\xhrhttpclient.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\esm\\xhrhttpclient.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/esm/xhrhttpclient.js.map",
       "AssetKind": "All",
@@ -3285,10 +3285,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\esm\\xhrhttpclient.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/webworker/signalr.js",
       "AssetKind": "All",
@@ -3304,10 +3304,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\webworker\\signalr.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/webworker/signalr.js.map",
       "AssetKind": "All",
@@ -3323,10 +3323,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\webworker\\signalr.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.min.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.min.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/webworker/signalr.min.js",
       "AssetKind": "All",
@@ -3342,10 +3342,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\webworker\\signalr.min.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.min.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.min.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/dist/webworker/signalr.min.js.map",
       "AssetKind": "All",
@@ -3361,10 +3361,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\webworker\\signalr.min.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\package.json",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\package.json",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/package.json",
       "AssetKind": "All",
@@ -3380,10 +3380,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\package.json"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\readme.md",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\readme.md",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/readme.md",
       "AssetKind": "All",
@@ -3399,10 +3399,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\readme.md"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\abortcontroller.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\abortcontroller.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/abortcontroller.ts",
       "AssetKind": "All",
@@ -3418,10 +3418,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\abortcontroller.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\accesstokenhttpclient.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\accesstokenhttpclient.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/accesstokenhttpclient.ts",
       "AssetKind": "All",
@@ -3437,10 +3437,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\accesstokenhttpclient.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\browser-index.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\browser-index.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/browser-index.ts",
       "AssetKind": "All",
@@ -3456,10 +3456,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\browser-index.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\defaulthttpclient.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\defaulthttpclient.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/defaulthttpclient.ts",
       "AssetKind": "All",
@@ -3475,10 +3475,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\defaulthttpclient.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\defaultreconnectpolicy.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\defaultreconnectpolicy.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/defaultreconnectpolicy.ts",
       "AssetKind": "All",
@@ -3494,10 +3494,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\defaultreconnectpolicy.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\errors.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\errors.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/errors.ts",
       "AssetKind": "All",
@@ -3513,10 +3513,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\errors.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\fetchhttpclient.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\fetchhttpclient.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/fetchhttpclient.ts",
       "AssetKind": "All",
@@ -3532,10 +3532,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\fetchhttpclient.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\handshakeprotocol.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\handshakeprotocol.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/handshakeprotocol.ts",
       "AssetKind": "All",
@@ -3551,10 +3551,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\handshakeprotocol.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\headernames.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\headernames.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/headernames.ts",
       "AssetKind": "All",
@@ -3570,10 +3570,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\headernames.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\httpclient.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\httpclient.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/httpclient.ts",
       "AssetKind": "All",
@@ -3589,10 +3589,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\httpclient.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\httpconnection.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\httpconnection.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/httpconnection.ts",
       "AssetKind": "All",
@@ -3608,10 +3608,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\httpconnection.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\hubconnection.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\hubconnection.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/hubconnection.ts",
       "AssetKind": "All",
@@ -3627,10 +3627,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\hubconnection.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\hubconnectionbuilder.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\hubconnectionbuilder.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/hubconnectionbuilder.ts",
       "AssetKind": "All",
@@ -3646,10 +3646,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\hubconnectionbuilder.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\iconnection.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\iconnection.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/iconnection.ts",
       "AssetKind": "All",
@@ -3665,10 +3665,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\iconnection.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\ihttpconnectionoptions.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\ihttpconnectionoptions.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/ihttpconnectionoptions.ts",
       "AssetKind": "All",
@@ -3684,10 +3684,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\ihttpconnectionoptions.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\ihubprotocol.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\ihubprotocol.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/ihubprotocol.ts",
       "AssetKind": "All",
@@ -3703,10 +3703,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\ihubprotocol.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\ilogger.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\ilogger.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/ilogger.ts",
       "AssetKind": "All",
@@ -3722,10 +3722,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\ilogger.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\index.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\index.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/index.ts",
       "AssetKind": "All",
@@ -3741,10 +3741,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\index.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\iretrypolicy.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\iretrypolicy.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/iretrypolicy.ts",
       "AssetKind": "All",
@@ -3760,10 +3760,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\iretrypolicy.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\istatefulreconnectoptions.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\istatefulreconnectoptions.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/istatefulreconnectoptions.ts",
       "AssetKind": "All",
@@ -3779,10 +3779,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\istatefulreconnectoptions.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\itransport.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\itransport.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/itransport.ts",
       "AssetKind": "All",
@@ -3798,10 +3798,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\itransport.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\jsonhubprotocol.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\jsonhubprotocol.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/jsonhubprotocol.ts",
       "AssetKind": "All",
@@ -3817,10 +3817,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\jsonhubprotocol.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\loggers.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\loggers.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/loggers.ts",
       "AssetKind": "All",
@@ -3836,10 +3836,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\loggers.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\longpollingtransport.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\longpollingtransport.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/longpollingtransport.ts",
       "AssetKind": "All",
@@ -3855,10 +3855,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\longpollingtransport.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\messagebuffer.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\messagebuffer.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/messagebuffer.ts",
       "AssetKind": "All",
@@ -3874,10 +3874,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\messagebuffer.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\polyfills.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\polyfills.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/polyfills.ts",
       "AssetKind": "All",
@@ -3893,10 +3893,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\polyfills.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\serversenteventstransport.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\serversenteventstransport.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/serversenteventstransport.ts",
       "AssetKind": "All",
@@ -3912,10 +3912,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\serversenteventstransport.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\stream.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\stream.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/stream.ts",
       "AssetKind": "All",
@@ -3931,10 +3931,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\stream.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\subject.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\subject.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/subject.ts",
       "AssetKind": "All",
@@ -3950,10 +3950,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\subject.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\textmessageformat.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\textmessageformat.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/textmessageformat.ts",
       "AssetKind": "All",
@@ -3969,10 +3969,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\textmessageformat.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\third-party-notices.txt",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\third-party-notices.txt",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/third-party-notices.txt",
       "AssetKind": "All",
@@ -3988,10 +3988,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\third-party-notices.txt"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\utils.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\utils.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/utils.ts",
       "AssetKind": "All",
@@ -4007,10 +4007,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\utils.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\websockettransport.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\websockettransport.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/websockettransport.ts",
       "AssetKind": "All",
@@ -4026,10 +4026,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\websockettransport.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\xhrhttpclient.ts",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\src\\xhrhttpclient.ts",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/signalr/src/xhrhttpclient.ts",
       "AssetKind": "All",
@@ -4045,10 +4045,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\src\\xhrhttpclient.ts"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\site.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -4064,10 +4064,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -4083,10 +4083,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -4102,10 +4102,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -4121,10 +4121,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -4140,10 +4140,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -4159,10 +4159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -4178,10 +4178,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -4197,10 +4197,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -4216,10 +4216,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -4235,10 +4235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -4254,10 +4254,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -4273,10 +4273,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -4292,10 +4292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -4311,10 +4311,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -4330,10 +4330,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -4349,10 +4349,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -4368,10 +4368,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -4387,10 +4387,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -4406,10 +4406,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -4425,10 +4425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -4444,10 +4444,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -4463,10 +4463,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -4482,10 +4482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -4501,10 +4501,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -4520,10 +4520,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -4539,10 +4539,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -4558,10 +4558,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -4577,10 +4577,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -4596,10 +4596,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -4615,10 +4615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -4634,10 +4634,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -4653,10 +4653,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -4672,10 +4672,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -4691,10 +4691,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -4710,10 +4710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -4729,10 +4729,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -4748,10 +4748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -4767,10 +4767,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -4786,10 +4786,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -4805,10 +4805,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -4824,10 +4824,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -4843,10 +4843,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -4862,10 +4862,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -4881,10 +4881,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -4900,10 +4900,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -4919,10 +4919,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -4938,10 +4938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -4957,10 +4957,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -4976,10 +4976,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -4995,10 +4995,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -5014,10 +5014,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -5033,10 +5033,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -5052,10 +5052,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -5071,10 +5071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -5090,10 +5090,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -5109,10 +5109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -5128,10 +5128,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "ChatAppNETCore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "ContentRoot": "D:\\Workspace\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
       "BasePath": "_content/ChatAppNETCore",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

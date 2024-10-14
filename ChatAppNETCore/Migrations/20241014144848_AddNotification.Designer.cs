@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChatAppNETCore.Migrations
 {
     [DbContext(typeof(ChatAppContext))]
-    [Migration("20241014040741_AddNotificationModel")]
-    partial class AddNotificationModel
+    [Migration("20241014144848_AddNotification")]
+    partial class AddNotification
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

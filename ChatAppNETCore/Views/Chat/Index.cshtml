@@ -21,7 +21,10 @@
         <ul>
             @foreach (var user in Model)
             {
-                <li class="chat-user" onclick="openChatRoom('@user.Id', '@user.Name', '@currentUserId', event)">@user.Name</li>
+                <li class="chat-user new-message" onclick="openChatRoom('@user.Id', '@user.Name', '@currentUserId', event)">
+                    <p>@user.Name</p>
+                    <div class="dot-red"></div>
+                </li>
             }
         </ul>
     </div>
@@ -43,13 +46,11 @@
                 <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="#007aff"></rect>
                 </svg>
-                <strong class="me-auto text-black">Bootstrap</strong>
-                <small>11 mins ago</small>
+                <strong class="me-auto text-black" id="messageFrom"></strong>
+                <small id="toastTime"></small>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
-            <div class="toast-body bg-white">
-                Hello, world! This is a toast message.
-            </div>
+            <div class="toast-body bg-white" id="toastMessageContent"></div>
         </div>
     </div>
 </div>
@@ -154,10 +155,30 @@
         overflow-y: auto;
     }
 
+        .new-message {
+            display: flex;
+            justify-content: space-between
+        }
+
+        .new-message .dot-red {
+            width: 10px;
+            height: 10px;
+            background: red;
+            border-radius: 50%;
+        }
+
+        .new-message p{
+            font-weight: bold !important;
+        }
+
         .chat-list h3 {
             margin-top: 0;
             text-align: center;
             font-size: 1.5rem;
+        }
+
+        .chat-list p {
+            margin: 0;
         }
 
         .chat-list ul {

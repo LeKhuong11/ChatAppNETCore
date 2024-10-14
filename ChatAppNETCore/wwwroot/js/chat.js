@@ -24,12 +24,11 @@ connection.on("ReceiveMessage", (message) => {
     chatContentDiv.appendChild(messageElement);
 });
 
-connection.on("NotificationMessage", (notification, message) => {
-    console.log(notification);
+connection.on("NotificationMessage", (notification, message, senderName) => {
 
-
-    //document.getElementById('toastMessageContent').innerText = notification.message;
-    //document.getElementById('toastTime').innerText = new Date().toLocaleTimeString();
+    document.getElementById('toastMessageContent').innerText = message.content;
+    document.getElementById('messageFrom').innerText = `New message from ${senderName.toUpperCase()}`;
+    document.getElementById('toastTime').innerText = new Date().toLocaleTimeString();
 
     // Lấy toast element
     const toastElement = document.getElementById('liveToast');
