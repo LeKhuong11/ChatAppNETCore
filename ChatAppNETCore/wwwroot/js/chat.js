@@ -62,6 +62,13 @@ connection.on("JoinRoomMessage", (userName, userId) => {
         behavior: 'smooth'
     });
 })
+
+connection.on("userConnection", (usersOnline) => {
+    const allChatUsers = document.querySelectorAll('.chat-user');
+
+        console.log('Users:', usersOnline);       
+
+});
     
 function sendMessages(room, toUserId, event) {
     event.preventDefault()
@@ -92,16 +99,18 @@ function openChatRoom(userId, userName, currentUserId) {
     const allChatUsers = document.querySelectorAll('.chat-user');
     const userChat = document.getElementById(`${userId}`);
     
-    if (userChat.getAttribute('is-open') == 'false') {
-        userChat.setAttribute('is-open', true);
-        userChat.classList.remove('new-message');
+     if (userChat.getAttribute('is-open') == 'false') {
 
         allChatUsers.forEach(user => {
             user.classList.remove('active');
+            user.setAttribute('is-open', false);
         });
 
-        const clickedUser = event.currentTarget;
-        clickedUser.classList.add('active');
+        userChat.setAttribute('is-open', true);
+        userChat.classList.remove('new-message');
+
+        const clickedUserChat = event.currentTarget;
+        clickedUserChat.classList.add('active');
 
         fetch('api/ChatApi/FindOrCreateChatRoom', {
             method: 'POST',
@@ -127,7 +136,17 @@ function openChatRoom(userId, userName, currentUserId) {
                 chatInput.innerHTML = '';
 
                 if (!data.messages || data.messages.length === 0) {
-                    chatContentDiv.innerHTML = 'Chưa có tin nhắn';
+
+                    const html = `
+                        <div class="user-joined">
+                            <p><b>No messages yet</b></p>
+                        </div>
+                    `;
+
+                    const chatContentDiv = document.getElementById('chat-content');
+                    const divElement = document.createElement('div');
+                    divElement.innerHTML = html;
+                    chatContentDiv.appendChild(divElement);
                 } else {
                     const chatWith = document.querySelector('.chat-with');
                     chatWith.innerHTML = `Chat with ${userName}`;

@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "ChatAppNETCore.Controllers.ChatApiController",
+    "ContainingType": "ChatAppNETCore.Controllers.apis.ChatApiController",
     "Method": "GetChatById",
     "RelativePath": "api/ChatApi/{id}",
     "HttpMethod": "GET",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "ContainingType": "ChatAppNETCore.Controllers.ChatApiController",
+    "ContainingType": "ChatAppNETCore.Controllers.apis.ChatApiController",
     "Method": "CreateChatRoom",
     "RelativePath": "api/ChatApi/CreateChatRoom",
     "HttpMethod": "POST",
@@ -42,7 +42,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ChatAppNETCore.Controllers.ChatApiController",
+    "ContainingType": "ChatAppNETCore.Controllers.apis.ChatApiController",
     "Method": "FindOrCreateChatRoom",
     "RelativePath": "api/ChatApi/FindOrCreateChatRoom",
     "HttpMethod": "POST",
@@ -51,7 +51,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "ChatAppNETCore.Controllers.FindChatsRequest",
+        "Type": "ChatAppNETCore.Controllers.apis.FindChatsRequest",
         "IsRequired": true
       }
     ],

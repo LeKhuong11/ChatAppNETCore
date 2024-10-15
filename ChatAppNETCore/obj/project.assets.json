@@ -3984,11 +3984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\ChatAppNETCore.csproj",
+      "projectUniqueName": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\ChatAppNETCore.csproj",
       "projectName": "ChatAppNETCore",
-      "projectPath": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\ChatAppNETCore.csproj",
+      "projectPath": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\ChatAppNETCore.csproj",
       "packagesPath": "C:\\Users\\Khuong\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\",
+      "outputPath": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Khuong\\AppData\\Roaming\\NuGet\\NuGet.Config",

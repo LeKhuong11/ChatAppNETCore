@@ -1,4 +1,5 @@
 ﻿using ChatAppNETCore.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -7,6 +8,7 @@ namespace ChatAppNETCore.Controllers.apis
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ChatApiController : ControllerBase
     {
         private readonly ChatAppContext _context;

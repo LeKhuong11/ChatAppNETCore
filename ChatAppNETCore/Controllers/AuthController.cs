@@ -66,7 +66,7 @@ namespace ChatAppNETCore.Controllers
                     var authProperties = new AuthenticationProperties
                     {
                         IsPersistent = true, // Ghi nhớ phiên đăng nhập
-                        ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(1) // Thời gian hết hạn
+                        ExpiresUtc = DateTimeOffset.UtcNow.AddHours(1) // Thời gian hết hạn
                     };
 
                     // Đăng nhập vào hệ thống

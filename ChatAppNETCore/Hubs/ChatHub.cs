@@ -1,8 +1,9 @@
-﻿using ChatAppNETCore.Models;
-using Microsoft.AspNetCore.SignalR;
+﻿using Microsoft.AspNetCore.SignalR;
 using System.Collections.Concurrent;
 using System.Security.Claims;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using ChatAppNETCore.Models;
+using ChatAppNETCore.Hubs.Models;
+using System.Collections.Generic;
 
 namespace ChatAppNETCore.Hubs
 {
@@ -10,35 +11,34 @@ namespace ChatAppNETCore.Hubs
     {
         private readonly ChatAppContext _context;
         private static ConcurrentDictionary<string, string> _onlineUsers = new ConcurrentDictionary<string, string>();
+        List<OnlineUser> onlineUsers = new List<OnlineUser>();
 
         public ChatHub(ChatAppContext context)
         {
             _context = context;
         }
 
-        public override Task OnConnectedAsync()
+        public override async Task<Task> OnConnectedAsync()
         {
-            var userId = Context.UserIdentifier.ToUpper();
-            var connectionId = Context.ConnectionId;
+            string userId = Context.UserIdentifier.ToUpper();
+            string connectionId = Context.ConnectionId;
+            OnlineUser onlineUser = new OnlineUser(connectionId, userId);
 
-            Console.WriteLine("connected: ");
-            Console.WriteLine(userId);
-            Console.WriteLine(connectionId);
 
             // Store userId and connectionId into the dictionary
             _onlineUsers.TryAdd(userId, connectionId);
+
+            onlineUsers.Add(onlineUser);
+
+            await Clients.All.SendAsync("userConnection", onlineUsers.ToList());
 
             return base.OnConnectedAsync();
         }
 
         public override Task OnDisconnectedAsync(System.Exception exception)
         {
-            var userId = Context.UserIdentifier.ToUpper();
-            var connectionId = Context.ConnectionId;
-
-            Console.WriteLine("removed: ");
-            Console.WriteLine(userId);
-            Console.WriteLine(connectionId);
+            string userId = Context.UserIdentifier.ToUpper();
+            string connectionId = Context.ConnectionId;
 
             // If the user is disconnected, remove the userId from the dictionary
             _onlineUsers.TryRemove(userId, out _);
