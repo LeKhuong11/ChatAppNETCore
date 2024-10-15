@@ -298,3 +298,4 @@ D:\Workspace\C#\ChatAppNETCore\ChatAppNETCore\obj\Debug\net8.0\ChatAppNETCore.pd
 D:\Workspace\C#\ChatAppNETCore\ChatAppNETCore\obj\Debug\net8.0\ChatAppNETCore.genruntimeconfig.cache
 D:\Workspace\C#\ChatAppNETCore\ChatAppNETCore\obj\Debug\net8.0\ref\ChatAppNETCore.dll
 D:\C#\ChatAppNETCore\ChatAppNETCore\obj\Debug\net8.0\ChatAppNETCore.sourcelink.json
+D:\C#\ChatAppNETCore\ChatAppNETCore\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

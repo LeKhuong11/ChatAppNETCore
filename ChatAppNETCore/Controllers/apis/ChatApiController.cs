@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace ChatAppNETCore.Controllers
+namespace ChatAppNETCore.Controllers.apis
 {
     [Route("api/[controller]")]
     [ApiController]

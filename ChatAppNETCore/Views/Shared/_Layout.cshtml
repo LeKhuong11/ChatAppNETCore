@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ChatAppNETCore.styles.css" asp-append-version="true" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
+
+    <style>
+        .user-name, .logout {
+            font-family: "Varela Round", sans-serif;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,6 +38,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Chat" asp-action="Index">Chat</a>
                         </li>
                     </ul>
                 </div>
@@ -34,22 +49,13 @@
             {
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item dropdown d-md-down-none show">
-                            <button type="button" class="btn btn-primary position-relative">
-                                Inbox
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    99+
-                                    <span class="visually-hidden">unread messages</span>
-                                </span>
-                            </button>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark">@User.Identity.Name</a>
+                            <a class="nav-link text-dark user-name">@User.Identity.Name</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
                            <span> | </span>
                         </li>
-                        <li class="nav-item d-flex align-items-center">
+                        <li class="nav-item d-flex align-items-center logout">
                             <a class="px-2" href="/Auth/Logout">Logout</a>
                         </li>
                     </ul>
