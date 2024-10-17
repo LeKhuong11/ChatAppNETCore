@@ -3,7 +3,7 @@
 var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
 
 connection.start().then(function () {
-    console.log('connected');
+
 }).catch(function (err) {
     return console.error(err.toString());
 });
@@ -63,13 +63,36 @@ connection.on("JoinRoomMessage", (userName, userId) => {
     });
 })
 
-connection.on("userConnection", (usersOnline) => {
+connection.on("userConnection", (usersOnline) => { 
+    const allChatUsers = document.querySelectorAll('.chat-user');
+    
+    allChatUsers.forEach(user => {
+        const id = user.getAttribute('id').toUpperCase();
+
+        usersOnline.forEach(userOnline => { 
+            if (userOnline.value.userId == id) {
+                const userOnlineEle = user.querySelector('.user-online');
+
+                userOnlineEle.classList.add('active-user-online');
+            }
+        })
+    });
+});
+
+connection.on("userDisconnect", (userIdDisconnect) => {
     const allChatUsers = document.querySelectorAll('.chat-user');
 
-        console.log('Users:', usersOnline);       
+    allChatUsers.forEach(user => {
+        const id = user.getAttribute('id').toUpperCase();
 
+        if (userIdDisconnect == id) {
+            const userOnlineEle = user.querySelector('.user-online');
+            userOnlineEle.classList.remove('active-user-online');
+        }
+    });
 });
-    
+
+
 function sendMessages(room, toUserId, event) {
     event.preventDefault()
     var message = document.getElementById("messageInput");
@@ -80,6 +103,7 @@ function sendMessages(room, toUserId, event) {
             top: chatContentDiv.scrollHeight,
             behavior: 'smooth' 
         });
+        
         message.value = "";
     }).catch(function (err) {
         return console.error(err.toString());
@@ -125,7 +149,6 @@ function openChatRoom(userId, userName, currentUserId) {
             return response.json();
         })
             .then(data => {
-                const room = data.id;
 
                 const chatContentDiv = document.getElementById('chat-content');
                 const chatRoom = document.querySelector('.chat-room');
@@ -175,7 +198,7 @@ function openChatRoom(userId, userName, currentUserId) {
                     <div>
                         <form id="form-message" class="message-input" action="#" onsubmit="sendMessages(${data.chatRoom.id}, '${userId}', event)">
                             <input type="text" id="messageInput" placeholder="Type a message..." />
-                            <button type="submit" id="sendMessageButton" onclick="sendMessages(${data.chatRoom.id}, '${userId}')">Send</button>
+                            <button type="submit" id="sendMessageButton" onclick="sendMessages(${data.chatRoom.id}, '${userId}', event)">Send</button>
                         </form>
                     </div>
                 `;

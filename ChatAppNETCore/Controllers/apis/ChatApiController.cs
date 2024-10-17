@@ -25,8 +25,7 @@ namespace ChatAppNETCore.Controllers.apis
             string currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             // Tìm phòng chat đã tồn tại giữa current user và userId
-            var existingChat = await Task.Run(() => _context.C_Chats
-                .FirstOrDefault(chat => chat.Members.Contains(currentUserId) && chat.Members.Contains(request.UserId)));
+            C_Chat existingChat = await Task.Run(() => _context.C_Chats.FirstOrDefault(chat => chat.Members.Contains(currentUserId) && chat.Members.Contains(request.UserId)));
 
             if (existingChat != null)
             {
@@ -43,7 +42,7 @@ namespace ChatAppNETCore.Controllers.apis
             }
 
             // Nếu chưa có phòng chat, tạo phòng chat mới
-            var newChatRoom = new C_Chat
+            C_Chat newChatRoom = new C_Chat
             {
                 Members = new List<string> { currentUserId.ToUpper(), request.UserId.ToUpper() },
                 CreatedAt = DateTime.Now
@@ -68,7 +67,7 @@ namespace ChatAppNETCore.Controllers.apis
                 return BadRequest("Members list cannot be empty.");
             }
 
-            var newChatRoom = new C_Chat
+            C_Chat newChatRoom = new C_Chat
             {
                 Members = request.Members,
                 CreatedAt = DateTime.Now
@@ -83,7 +82,7 @@ namespace ChatAppNETCore.Controllers.apis
         [HttpGet("{id}")]
         public async Task<ActionResult<C_Chat>> GetChatById(int id)
         {
-            var chat = await _context.C_Chats.FindAsync(id);
+            C_Chat chat = await _context.C_Chats.FindAsync(id);
 
             if (chat == null)
             {

@@ -1,8 +1,10 @@
-﻿using ChatAppNETCore.Models;
+﻿using ChatAppNETCore.Hubs;
+using ChatAppNETCore.Models;
 using ChatAppNETCore.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using StudentManage.Models.Auth;
 using System.Security.Claims;
 
@@ -10,13 +12,15 @@ namespace ChatAppNETCore.Controllers
 {
     public class AuthController : Controller
     {
-        private readonly UserService _userService;
         private readonly ChatAppContext _context;
+        private readonly UserService _userService;
+        private readonly IHubContext<ChatHub> _chatHubContext;
 
-        public AuthController(UserService userService, ChatAppContext context)
+        public AuthController(ChatAppContext context, UserService userService, IHubContext<ChatHub> chatHubContext)
         {
-            _userService = userService;
             _context = context;
+            _userService = userService;
+            _chatHubContext = chatHubContext;
         }
 
 
@@ -76,6 +80,8 @@ namespace ChatAppNETCore.Controllers
                         authProperties
                     );
 
+                    await _chatHubContext.Clients.All.SendAsync("AddUserToOnlineList", user.Id);
+
                     TempData["SuccessMessage"] = "Login successful!";
 
                     // Chuyển hướng về trang quản lý sinh viên
@@ -91,7 +97,10 @@ namespace ChatAppNETCore.Controllers
 
         public async Task<IActionResult> Logout()
         {
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            await _chatHubContext.Clients.All.SendAsync("RemoveUserFromOnlineList", userId);
 
             TempData["SuccessMessage"] = "You have been logged out successfully.";
 

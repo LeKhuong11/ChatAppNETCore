@@ -23,7 +23,10 @@
             {
                 <li class="chat-user" id="@user.Id" onclick="openChatRoom('@user.Id', '@user.Name', '@currentUserId', event)" is-open="false">
                     <div class="info">
-                        <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
+                        <div class="position-relative">
+                            <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
+                            <div class="user-online"></div>
+                        </div>
                         <p class="px-2">@user.Name</p>
                     </div>
                     <div class="dot-red"></div>
@@ -138,6 +141,18 @@
         .chat-user .info {
             display: flex;
             align-items: center;
+        }
+
+        .chat-user .info .active-user-online {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: #31a24c;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            right: 0;
+            bottom: 2px;
+                
         }
 
         .chat-user .info img {

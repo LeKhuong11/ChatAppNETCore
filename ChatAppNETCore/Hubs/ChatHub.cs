@@ -4,14 +4,15 @@ using System.Security.Claims;
 using ChatAppNETCore.Models;
 using ChatAppNETCore.Hubs.Models;
 using System.Collections.Generic;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace ChatAppNETCore.Hubs
 {
     public class ChatHub : Hub
     {
         private readonly ChatAppContext _context;
-        private static ConcurrentDictionary<string, string> _onlineUsers = new ConcurrentDictionary<string, string>();
-        List<OnlineUser> onlineUsers = new List<OnlineUser>();
+        private static ConcurrentDictionary<string, OnlineUser> _onlineUsers = new ConcurrentDictionary<string, OnlineUser>();
+        private static Dictionary<string, HashSet<string>> UserRooms = new();
 
         public ChatHub(ChatAppContext context)
         {
@@ -21,40 +22,71 @@ namespace ChatAppNETCore.Hubs
         public override async Task<Task> OnConnectedAsync()
         {
             string userId = Context.UserIdentifier.ToUpper();
-            string connectionId = Context.ConnectionId;
-            OnlineUser onlineUser = new OnlineUser(connectionId, userId);
-
-
-            // Store userId and connectionId into the dictionary
-            _onlineUsers.TryAdd(userId, connectionId);
-
-            onlineUsers.Add(onlineUser);
-
-            await Clients.All.SendAsync("userConnection", onlineUsers.ToList());
+            
+            await this.AddUserToOnlineList(userId);
 
             return base.OnConnectedAsync();
         }
 
-        public override Task OnDisconnectedAsync(System.Exception exception)
+        public override async Task<Task> OnDisconnectedAsync(System.Exception exception)
         {
             string userId = Context.UserIdentifier.ToUpper();
-            string connectionId = Context.ConnectionId;
 
-            // If the user is disconnected, remove the userId from the dictionary
-            _onlineUsers.TryRemove(userId, out _);
+            await this.RemoveUserFromOnlineList(userId);
 
             return base.OnDisconnectedAsync(exception);
         }
-            
+
+        public async Task AddUserToOnlineList(string userId)
+        {
+            string connectionId = Context.ConnectionId;
+            var isUserAvailable = _onlineUsers.Values.Where(u => u.UserId == userId);
+
+            if (!isUserAvailable.Any())
+            {
+                OnlineUser user = new OnlineUser(connectionId, userId);
+
+                // Store userId and connectionId into the dictionary
+                _onlineUsers.TryAdd(connectionId, user);
+            }
+            else
+            {
+                // Update connectionId
+                var existingUser = isUserAvailable.FirstOrDefault();
+                if (existingUser != null)
+                {
+                    _onlineUsers.TryRemove(existingUser.ConnectionId, out _); // Remove old user connection
+                    existingUser.ConnectionId = connectionId; // Update with new connectionId
+                    _onlineUsers.TryAdd(connectionId, existingUser); // Add updated user back
+                }
+            }
+
+            await Clients.All.SendAsync("userConnection", _onlineUsers.ToList());
+        }
+
+        public async Task RemoveUserFromOnlineList(string userId)
+        {
+            string connectionId = Context.ConnectionId;
+            var isUserAvailable = _onlineUsers.Values.Where(u => u.UserId == userId);
+
+            var existingUser = isUserAvailable.FirstOrDefault();
+            if (existingUser != null)
+            {
+                _onlineUsers.TryRemove(existingUser.ConnectionId, out _);
+                await Clients.All.SendAsync("userDisconnect", existingUser.UserId);
+            }
+
+        }
+
         public async Task SendMessage(string room, string message, string toUserId)
         {
+            string userId = Context.UserIdentifier.ToUpper();
             string userName = Context.User.Identity.Name;
-            string userId = Context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            var chatMessage = new C_Message
+            C_Message chatMessage = new C_Message
             {
                 ChatId = room,
-                SenderId = userId.ToUpper(),
+                SenderId = userId,
                 Content = message,
                 CreatedAt = DateTime.UtcNow,
             };
@@ -67,10 +99,25 @@ namespace ChatAppNETCore.Hubs
 
         public async Task JoinRoom(string room)
         {
+            string userId = Context.UserIdentifier.ToUpper();
             string userName = Context.User.Identity.Name;
-            string userId = Context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+
+            if (!UserRooms.ContainsKey(userId))
+            {
+                UserRooms[userId] = new HashSet<string>();
+            }
+
+            foreach (var oldRoom in UserRooms[userId])
+            {
+                await Groups.RemoveFromGroupAsync(Context.ConnectionId, oldRoom);
+            }
 
             await Groups.AddToGroupAsync(Context.ConnectionId, room);
+            UserRooms[userId].Clear(); // Remove old room list
+            UserRooms[userId].Add(room); // Add new room to list
+
+            
             await Clients.Group(room).SendAsync("JoinRoomMessage", userName, userId.ToUpper());
         }
 
@@ -84,7 +131,7 @@ namespace ChatAppNETCore.Hubs
 
         public async Task SendNotification(C_Message message, string senderName, string toUserId, string room)
         {
-            var notification = new C_Notification
+            C_Notification notification = new C_Notification
             {
                 ReceiveId = toUserId,
                 SenderId = message.SenderId,
@@ -94,9 +141,11 @@ namespace ChatAppNETCore.Hubs
             _context.C_Notification.Add(notification);
             await _context.SaveChangesAsync();
 
-            if (_onlineUsers.TryGetValue(toUserId, out var connectionId))
+            OnlineUser isUserAvailable = _onlineUsers.Values.First(u => u.UserId == toUserId);
+
+            if (isUserAvailable != null)
             {
-                await Clients.Client(connectionId).SendAsync("NotificationMessage", notification, message, senderName);
+                await Clients.Client(isUserAvailable.ConnectionId).SendAsync("NotificationMessage", notification, message, senderName);
             }
         }
     }
