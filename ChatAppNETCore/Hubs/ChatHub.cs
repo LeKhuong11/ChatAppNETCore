@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 using System.Collections.Concurrent;
-using System.Security.Claims;
 using ChatAppNETCore.Models;
 using ChatAppNETCore.Hubs.Models;
-using System.Collections.Generic;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace ChatAppNETCore.Hubs
 {
@@ -88,12 +85,13 @@ namespace ChatAppNETCore.Hubs
                 ChatId = room,
                 SenderId = userId,
                 Content = message,
-                CreatedAt = DateTime.UtcNow,
+                CreatedAt = DateTime.Now,
             };
 
             _context.C_Messages.Add(chatMessage);
             await _context.SaveChangesAsync();
             await Clients.Group(room).SendAsync("ReceiveMessage", chatMessage);
+          
             await this.SendNotification(chatMessage, userName, toUserId, room);
         }
 
@@ -141,7 +139,7 @@ namespace ChatAppNETCore.Hubs
             _context.C_Notification.Add(notification);
             await _context.SaveChangesAsync();
 
-            OnlineUser isUserAvailable = _onlineUsers.Values.First(u => u.UserId == toUserId);
+            OnlineUser? isUserAvailable = _onlineUsers.Values.FirstOrDefault(u => u.UserId == toUserId);
 
             if (isUserAvailable != null)
             {

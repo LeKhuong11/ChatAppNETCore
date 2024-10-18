@@ -10,12 +10,11 @@ namespace ChatAppNETCore.Models
         [Required]
         public List<string> Members { get; set; }
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public C_Chat()
         {
             Members = new List<string>();
-            CreatedAt = DateTime.Now;
         }
     }
 }
