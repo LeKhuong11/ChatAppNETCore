@@ -56,5 +56,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatAppNETCore.Controllers.apis.ChatApiController",
+    "Method": "GetChat",
+    "RelativePath": "api/ChatApi/GetChat",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

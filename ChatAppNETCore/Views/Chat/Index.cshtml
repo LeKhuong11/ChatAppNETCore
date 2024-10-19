@@ -18,6 +18,17 @@
 <div class="chat-container">
     <div class="chat-list">
         <h3>Chat List</h3>
+        <div class="create-chat">
+            <p>New chat </p>
+            <div class="d-flex">
+                <div class="px-2 cursor-pointer" title="New chat" onclick="openSelectUser()">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <div class="px-2 cursor-pointer" title="New group">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+            </div>
+        </div>
         <ul>
             @foreach (var user in Model)
             {
@@ -61,13 +72,101 @@
 </div>
 
 
+<div class="user-list">
+    <div style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;">
+        <h2 class="text-center py-2">Users</h2>
+   </div>
+    <div class="list">
+        @foreach (var user in Model)
+        {
+            <div class="user">
+                <div class="info">
+                    <div class="position-relative">
+                        <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
+                        <div class="user-online"></div>
+                    </div>
+                    <p class="px-2">@user.Name</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="overlay"></div>
+
+
 <script>
     var currentUserId = '@currentUserId';
+
+    function openSelectUser() {
+        const userList = document.querySelector('.user-list');
+
+        userList.style.transform = 'translateX(0)'
+
+    }
 </script>
 
 <script src="~/js/signalr/dist/browser/signalr.js"></script>
 <script src="~/js/chat.js"></script>
 
+<style>
+    .create-chat {
+        margin-bottom: 10px;
+    }
+
+    .create-chat p {
+        font-size: 12px;
+    }
+
+    .user-list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 400px;
+        background: #f5f5f5;
+        border-left: 2px solid #77CDFF;
+        z-index: 99;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        transform: translateX(400px);
+        transition: transform .3s ease-in-out;
+    }
+
+        .list {
+            overflow-y: auto;
+        }
+
+            .user-list .user {
+                padding: 0 10px;
+                cursor: pointer;
+            }
+
+            .user-list .user:hover {
+                background-color: #e9ecef;
+            }
+
+                .user-list .user .info {
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #ccc;
+                    padding: 8px 0;
+                }
+
+                    .user-list .user img {
+                        border-radius: 50%;
+                    }
+
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+
+</style>
 
 <style>
     .chat-container {

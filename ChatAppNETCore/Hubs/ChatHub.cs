@@ -118,7 +118,7 @@ namespace ChatAppNETCore.Hubs
             
             await Clients.Group(room).SendAsync("JoinRoomMessage", userName, userId.ToUpper());
         }
-
+            
         public async Task LeaveRoom(string room)
         {
             string userName = Context.User.Identity.Name;

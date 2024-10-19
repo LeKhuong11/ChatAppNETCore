@@ -18,6 +18,19 @@ namespace ChatAppNETCore.Controllers.apis
             _context = context;
         }
 
+        [HttpGet("GetChat")]
+        public async Task<IActionResult> GetChat(int chatId)
+        {
+
+            var messages = await Task.Run(() => _context.C_Messages
+                .Where(message => message.ChatId == chatId.ToString())
+                .OrderBy(message => message.CreatedAt)
+                .ToList()
+            );
+
+            return Ok(messages);
+        }
+
 
         [HttpPost("FindOrCreateChatRoom")]
         public async Task<IActionResult> FindOrCreateChatRoom([FromBody] FindChatsRequest request)
