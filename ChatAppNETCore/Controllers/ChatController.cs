@@ -1,6 +1,7 @@
 ﻿using ChatAppNETCore.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 using System.Security.Claims;
 
 namespace ChatAppNETCore.Controllers
@@ -20,10 +21,15 @@ namespace ChatAppNETCore.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
-
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var chats = await _chatService.GetChatsByUserId(userId);
             var users = await _userService.getAllUserWithOutCurrentUser(userId);
-            return View(users);
+
+
+            ViewBag.Chats = chats;
+            ViewBag.Users = users;
+
+            return View();
         }
     }
 }

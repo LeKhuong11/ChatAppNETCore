@@ -26,10 +26,10 @@ namespace ChatAppNETCore.Services
             return null;
         }
 
-        public async Task<List<C_User>> getAllUserWithOutCurrentUser(Guid userId)
+        public async Task<List<C_User>> getAllUserWithOutCurrentUser(string userId)
         {
             var users = await _context.C_Users
-                 .Where(user => user.Id != userId)
+                 .Where(user => user.Id != Guid.Parse(userId))
                  .ToListAsync();
             return users;
         }

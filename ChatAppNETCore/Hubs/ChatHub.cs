@@ -74,7 +74,7 @@ namespace ChatAppNETCore.Hubs
             }
 
         }
-
+        
         public async Task SendMessage(string room, string message, string toUserId)
         {
             string userId = Context.UserIdentifier.ToUpper();

@@ -10,6 +10,11 @@ namespace ChatAppNETCore.Models
         [Required]
         public List<string> Members { get; set; }
 
+        [Required]
+        public bool IsGroup { get; set; } = false;
+
+        public string? GroupName { get; set; }
+
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public C_Chat()

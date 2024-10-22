@@ -1,8 +1,11 @@
 ﻿@using System.Security.Claims
-@model List<ChatAppNETCore.Models.C_User>
+@using ChatAppNETCore.ViewModels
 
 @{
     ViewData["Title"] = "Chat screen";
+    var chats = ViewBag.Chats as List<ChatListViewModel>;
+    var users = ViewBag.Users as List<C_User>;
+
     var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier).ToUpper();
 }
 
@@ -18,32 +21,48 @@
 <div class="chat-container">
     <div class="chat-list">
         <h3>Chat List</h3>
-        <div class="create-chat">
-            <p>New chat </p>
-            <div class="d-flex">
-                <div class="px-2 cursor-pointer" title="New chat" onclick="openSelectUser()">
-                    <i class="fa-solid fa-user-plus"></i>
-                </div>
-                <div class="px-2 cursor-pointer" title="New group">
-                    <i class="fa-solid fa-users"></i>
+        @if (chats.Any())
+        {
+            <div class="create-chat">
+                <p>New chat </p>
+                <div class="d-flex">
+                    <div class="px-2 cursor-pointer" title="New chat" onclick="openSelectUser()">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <div class="px-2 cursor-pointer" title="New group">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <ul>
-            @foreach (var user in Model)
-            {
-                <li class="chat-user" id="@user.Id" onclick="openChatRoom('@user.Id', '@user.Name', '@currentUserId', event)" is-open="false">
-                    <div class="info">
-                        <div class="position-relative">
-                            <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
-                            <div class="user-online"></div>
+            <ul>
+                @foreach (var chat in chats)
+                {
+                    <li class="chat-user" id="@chat.Partner.Id" onclick="openChatRoom('@chat.Id', '@chat.Partner.Name', '@currentUserId')" is-open="false">
+                        <div class="info">
+                            <div class="position-relative">
+                                <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
+                                <div class="user-online"></div>
+                            </div>
+                            <p class="px-2">@chat.Partner.Name</p>
                         </div>
-                        <p class="px-2">@user.Name</p>
+                        <div class="dot-red"></div>
+                    </li>
+                }
+            </ul>
+        } else {
+            <div class="mt-4">
+                <p class="label text-center">There have been no conversations yet</p>
+
+                <div class="d-flex justify-content-center mt-3">
+                    <div class="px-2 cursor-pointer" title="New chat" onclick="openSelectUser()">
+                        <i class="fa-solid fa-user-plus fs-5"></i>
                     </div>
-                    <div class="dot-red"></div>
-                </li>
-            }
-        </ul>
+                    <div class="px-2 cursor-pointer" title="New group">
+                        <i class="fa-solid fa-users fs-5"></i>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
 
     <div class="chat-room">
@@ -77,7 +96,7 @@
         <h2 class="text-center py-2">Users</h2>
    </div>
     <div class="list">
-        @foreach (var user in Model)
+        @foreach (var user in users)
         {
             <div class="user">
                 <div class="info">
@@ -92,17 +111,28 @@
     </div>
 </div>
 
-<div class="overlay"></div>
+<div id="overlay" onclick="offOverlay()"></div>
 
 
 <script>
     var currentUserId = '@currentUserId';
+    const userList = document.querySelector('.user-list');
 
     function openSelectUser() {
-        const userList = document.querySelector('.user-list');
 
-        userList.style.transform = 'translateX(0)'
+        userList.style.right = '0';
+        userList.style.opacity = '1';
+        onOverlay();
+    }
 
+    function onOverlay() {
+        document.getElementById("overlay").style.display = "block";
+    }
+
+    function offOverlay() {
+        document.getElementById("overlay").style.display = "none";
+        userList.style.right = '-400px';
+        userList.style.opacity = '0';
     }
 </script>
 
@@ -110,6 +140,20 @@
 <script src="~/js/chat.js"></script>
 
 <style>
+    #overlay {
+        position: fixed; 
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 2;
+        cursor: pointer;
+    }
+
     .create-chat {
         margin-bottom: 10px;
     }
@@ -121,15 +165,16 @@
     .user-list {
         position: fixed;
         top: 0;
-        right: 0;
+        right: -400px;
         bottom: 0;
         width: 400px;
         background: #f5f5f5;
         border-left: 2px solid #77CDFF;
-        z-index: 99;
+        z-index: 3;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        transform: translateX(400px);
-        transition: transform .3s ease-in-out;
+        opacity: 0;
+        
+        transition: right .3s ease-in-out, opacity .2s ease-in-out;
     }
 
         .list {
@@ -314,12 +359,20 @@
     .user-joined {
         display: flex;
         justify-content: center;
+        margin: 5px 0;
     }
 
     .user-joined p {
         border-radius: 10px;
         padding: 4px 7px;
         background: #f6f6f6;
+        font-size: 11px;
+    }
+
+    .label {
+        border-radius: 7px;
+        padding: 4px 7px;
+        background: #dddddd;
         font-size: 11px;
     }
 

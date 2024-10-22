@@ -119,11 +119,11 @@ function joinRoom(room) {
     });
 }
 
-function openChatRoom(userId, userName, currentUserId) {
+async function openChatRoom(chatId, userName, myId) {
     const allChatUsers = document.querySelectorAll('.chat-user');
     const userChat = document.getElementById(`${userId}`);
     
-     if (userChat.getAttribute('is-open') == 'false') {
+    if (userChat.getAttribute('is-open') == 'false') {
 
         allChatUsers.forEach(user => {
             user.classList.remove('active');
@@ -134,79 +134,80 @@ function openChatRoom(userId, userName, currentUserId) {
         userChat.classList.remove('new-message');
 
         const clickedUserChat = event.currentTarget;
-        clickedUserChat.classList.add('active');
+         clickedUserChat.classList.add('active');
 
-        fetch('api/ChatApi/FindOrCreateChatRoom', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ UserId: userId }),
-        }).then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-            .then(data => {
+         try {
+             await fetch(`/api/ChatApi/GetMessages/${chatId}`)
+                .then(response => {
+                    return response.json();
+                })
+                .then(messages => {
 
-                const chatContentDiv = document.getElementById('chat-content');
-                const chatRoom = document.querySelector('.chat-room');
-                const chatInput = document.querySelector('.chat-input');
+                    const chatContentDiv = document.getElementById('chat-content');
+                    const chatRoom = document.querySelector('.chat-room');
+                    const chatInput = document.querySelector('.chat-input');
 
-                // Clear Chat content (if any)
-                chatContentDiv.innerHTML = '';
-                chatInput.innerHTML = '';
 
-                if (!data.messages || data.messages.length === 0) {
+                    // Clear Chat content (if any)
+                    chatContentDiv.innerHTML = '';
+                    chatInput.innerHTML = '';
 
-                    const html = `
+                    if (!messages || messages.length === 0) {
+
+                        const html = `
                         <div class="user-joined">
                             <p><b>No messages yet</b></p>
                         </div>
-                    `;
+                        `;
 
-                    const chatContentDiv = document.getElementById('chat-content');
-                    const divElement = document.createElement('div');
-                    divElement.innerHTML = html;
-                    chatContentDiv.appendChild(divElement);
-                } else {
-                    const chatWith = document.querySelector('.chat-with');
-                    chatWith.innerHTML = `Chat with ${userName}`;
+                        const chatContentDiv = document.getElementById('chat-content');
+                        const divElement = document.createElement('div');
+                        divElement.innerHTML = html;
+                        chatContentDiv.appendChild(divElement);
+                    } else {
+                        const chatWith = document.querySelector('.chat-with');
+                        chatWith.innerHTML = `Chat with ${userName}`;
 
-                    // Add each message to chatContentDiv
-                    data.messages.forEach(message => {
-                        const messageElement = document.createElement('div');
-                        messageElement.classList.add('chat-message');
+                        // Add each message to chatContentDiv
+                        messages.forEach(message => {
+                            const messageElement = document.createElement('div');
+                            messageElement.classList.add('chat-message');
 
-                        messageElement.innerHTML = `
-                            <div class="message ${message.senderId == currentUserId ? "sent-by-me" : ""}">
+                            messageElement.innerHTML = `
+                            <div class="message ${message.senderId == myId ? "sent-by-me" : ""}">
                                 <p>${message.content}</p>
                                 <span>${new Date(message.createdAt).toLocaleString()}</span>
                             </div>
-                        `;
+                            `;
 
-                        chatContentDiv.appendChild(messageElement);
-                    });
+                            chatContentDiv.appendChild(messageElement);
+                        });
 
-                    // Scroll to the bottom
-                    chatContentDiv.scrollTop = chatContentDiv.scrollHeight;
-                }
+                        // Scroll to the bottom
+                        chatContentDiv.scrollTop = chatContentDiv.scrollHeight;
+                    }
 
-                // HTML nhập tin nhắn
-                chatInput.innerHTML += `
+                    // HTML nhập tin nhắn
+                    chatInput.innerHTML += `
                     <div>
-                        <form id="form-message" class="message-input" action="#" onsubmit="sendMessages(${data.chatRoom.id}, '${userId}', event)">
+                        <form id="form-message" class="message-input" action="#" onsubmit="sendMessages(${chatId}, '${userId}', event)">
                             <input type="text" id="messageInput" placeholder="Type a message..." />
-                            <button type="submit" id="sendMessageButton" onclick="sendMessages(${data.chatRoom.id}, '${userId}', event)">Send</button>
+                            <button type="submit" id="sendMessageButton" onclick="sendMessages(${chatId}, '${userId}', event)">Send</button>
                         </form>
                     </div>
-                `;
+                    `;
 
-                joinRoom(data.chatRoom.id);
-            })
+                    joinRoom(chatId);
+                })
 
+         } catch (error) {
+             console.error('Error fetching message:', error);
+         }
     }
+}
+
+function createChat(userId, myId) {
+
 }
 
 //document.getElementById("joinRoomButton").addEventListener("click", function (event) {

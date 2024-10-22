@@ -1,4 +1,8 @@
 ﻿using ChatAppNETCore.Models;
+using ChatAppNETCore.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace ChatAppNETCore.Services
 {
@@ -17,16 +21,28 @@ namespace ChatAppNETCore.Services
             _context = context;
         }
 
-        public List<C_Chat> GetChatsByUserId(string userId)
+        public async Task<List<ChatListViewModel>> GetChatsByUserId(string userId)
         {
-            var chats = _context.C_Chats
+            var chats = await _context.C_Chats
                 .Where(chat => chat.Members.Contains(userId))
-                .ToList();
+                .Select(chat => new ChatListViewModel
+                {
+                    Id = chat.Id,
+                    CreatedAt = chat.CreatedAt,
+                    isGroup = chat.IsGroup,
+
+                    Members = chat.IsGroup ? _context.C_Users
+                        .Where(u => chat.Members.Contains(u.Id.ToString())).ToList() : null,
+
+                    Partner = !chat.IsGroup ? _context.C_Users
+                        .FirstOrDefault(u => chat.Members.Contains(u.Id.ToString()) && u.Id.ToString() != userId) : null
+                })
+                .ToListAsync();
 
             return chats;
         }
 
-        public static implicit operator ChatService(UserService v)
+        public static implicit operator ChatService(UserService u)
         {
             throw new NotImplementedException();
         }

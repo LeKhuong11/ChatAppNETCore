@@ -33,6 +33,13 @@ namespace ChatAppNETCore.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("GroupName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsGroup")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Members")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

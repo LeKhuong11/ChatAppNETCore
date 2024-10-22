@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
 namespace ChatAppNETCore.Controllers.apis
@@ -18,15 +19,36 @@ namespace ChatAppNETCore.Controllers.apis
             _context = context;
         }
 
-        [HttpGet("GetChat")]
-        public async Task<IActionResult> GetChat(int chatId)
-        {
 
+        [HttpPost("CreateGroup")]
+        public async Task<IActionResult> CreateGroup(string groupName, List<string> Members)
+        {
+            var chat = new C_Chat
+            {
+                GroupName = groupName,
+                Members = Members,
+                IsGroup = true,
+                CreatedAt = DateTime.Now
+            };
+
+
+            _context.C_Chats.Add(chat);
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                Chat = chat,
+                Messages = (List<string>)null,
+            });
+        }
+
+        [HttpGet("GetMessages/{chatId}")]
+        public async Task<IActionResult> GetMessagesByChatId(int chatId)
+        {
             var messages = await Task.Run(() => _context.C_Messages
-                .Where(message => message.ChatId == chatId.ToString())
-                .OrderBy(message => message.CreatedAt)
-                .ToList()
-            );
+                    .Where(message => message.ChatId == chatId.ToString())
+                    .OrderBy(message => message.CreatedAt)
+                    .ToList());
 
             return Ok(messages);
         }
@@ -46,7 +68,7 @@ namespace ChatAppNETCore.Controllers.apis
                     .Where(message => message.ChatId == existingChat.Id.ToString())
                     .OrderBy(message => message.CreatedAt)
                     .ToList());
-
+                
                 return Ok(new
                 {
                     ChatRoom = existingChat,
@@ -57,13 +79,15 @@ namespace ChatAppNETCore.Controllers.apis
             // Nếu chưa có phòng chat, tạo phòng chat mới
             C_Chat newChatRoom = new C_Chat
             {
+                GroupName = null,
                 Members = new List<string> { currentUserId.ToUpper(), request.UserId.ToUpper() },
+                IsGroup = false,
                 CreatedAt = DateTime.Now
             };
 
             _context.C_Chats.Add(newChatRoom);
             await _context.SaveChangesAsync();
-
+                
             return Ok(new
             {
                 ChatRoom = newChatRoom,

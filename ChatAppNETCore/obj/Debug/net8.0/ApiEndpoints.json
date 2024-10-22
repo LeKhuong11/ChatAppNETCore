@@ -43,6 +43,27 @@
   },
   {
     "ContainingType": "ChatAppNETCore.Controllers.apis.ChatApiController",
+    "Method": "CreateGroup",
+    "RelativePath": "api/ChatApi/CreateGroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Members",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatAppNETCore.Controllers.apis.ChatApiController",
     "Method": "FindOrCreateChatRoom",
     "RelativePath": "api/ChatApi/FindOrCreateChatRoom",
     "HttpMethod": "POST",
@@ -59,8 +80,8 @@
   },
   {
     "ContainingType": "ChatAppNETCore.Controllers.apis.ChatApiController",
-    "Method": "GetChat",
-    "RelativePath": "api/ChatApi/GetChat",
+    "Method": "GetMessagesByChatId",
+    "RelativePath": "api/ChatApi/GetMessages/{chatId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -68,7 +89,7 @@
       {
         "Name": "chatId",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
