@@ -207,7 +207,22 @@ async function openChatRoom(chatId, userName, myId) {
 }
 
 function createChat(userId, myId) {
-
+    try {
+        await fetch('api/ChatApi/CreateChatRoom', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ Members: [userId, myId] }),
+        }).then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+    } catch (error) {
+        console.error('Error create chat:', error);
+    }
 }
 
 //document.getElementById("joinRoomButton").addEventListener("click", function (event) {

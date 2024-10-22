@@ -25,7 +25,6 @@ namespace ChatAppNETCore.Controllers
             var chats = await _chatService.GetChatsByUserId(userId);
             var users = await _userService.getAllUserWithOutCurrentUser(userId);
 
-
             ViewBag.Chats = chats;
             ViewBag.Users = users;
 

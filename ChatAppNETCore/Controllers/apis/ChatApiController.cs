@@ -42,6 +42,8 @@ namespace ChatAppNETCore.Controllers.apis
             });
         }
 
+
+
         [HttpGet("GetMessages/{chatId}")]
         public async Task<IActionResult> GetMessagesByChatId(int chatId)
         {
@@ -107,6 +109,7 @@ namespace ChatAppNETCore.Controllers.apis
             C_Chat newChatRoom = new C_Chat
             {
                 Members = request.Members,
+                IsGroup = false,
                 CreatedAt = DateTime.Now
             };
 
