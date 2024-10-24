@@ -34,10 +34,10 @@
                     </div>
                 </div>
             </div>
-            <ul>
+            <ul class="list-chat">
                 @foreach (var chat in chats)
                 {
-                    <li class="chat-user" id="@chat.Partner.Id" onclick="openChatRoom('@chat.Id', '@chat.Partner.Name', '@currentUserId')" is-open="false">
+                    <li class="chat-user" id="@chat.Partner.Id" onclick="openChatRoom('@chat.Id', '@chat.Partner.Id', '@chat.Partner.Name', '@currentUserId')" is-open="false">
                         <div class="info">
                             <div class="position-relative">
                                 <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
@@ -62,6 +62,8 @@
                     </div>
                 </div>
             </div>
+            <ul class="list-chat">
+            </ul>
         }
     </div>
 
@@ -98,7 +100,7 @@
     <div class="list">
         @foreach (var user in users)
         {
-            <div class="user">
+            <div class="user" onclick="createChat('@user.Id', '@currentUserId')">
                 <div class="info">
                     <div class="position-relative">
                         <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
@@ -116,24 +118,6 @@
 
 <script>
     var currentUserId = '@currentUserId';
-    const userList = document.querySelector('.user-list');
-
-    function openSelectUser() {
-
-        userList.style.right = '0';
-        userList.style.opacity = '1';
-        onOverlay();
-    }
-
-    function onOverlay() {
-        document.getElementById("overlay").style.display = "block";
-    }
-
-    function offOverlay() {
-        document.getElementById("overlay").style.display = "none";
-        userList.style.right = '-400px';
-        userList.style.opacity = '0';
-    }
 </script>
 
 <script src="~/js/signalr/dist/browser/signalr.js"></script>

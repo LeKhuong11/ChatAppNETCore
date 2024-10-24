@@ -1,4 +1,6 @@
 ﻿using ChatAppNETCore.Models;
+using ChatAppNETCore.Services;
+using ChatAppNETCore.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,10 +15,12 @@ namespace ChatAppNETCore.Controllers.apis
     public class ChatApiController : ControllerBase
     {
         private readonly ChatAppContext _context;
+        private readonly UserService _userService;
 
-        public ChatApiController(ChatAppContext context)
+        public ChatApiController(ChatAppContext context, UserService userService)
         {
             _context = context;
+            _userService = userService;
         }
 
 
@@ -81,7 +85,6 @@ namespace ChatAppNETCore.Controllers.apis
             // Nếu chưa có phòng chat, tạo phòng chat mới
             C_Chat newChatRoom = new C_Chat
             {
-                GroupName = null,
                 Members = new List<string> { currentUserId.ToUpper(), request.UserId.ToUpper() },
                 IsGroup = false,
                 CreatedAt = DateTime.Now
@@ -99,16 +102,18 @@ namespace ChatAppNETCore.Controllers.apis
 
 
         [HttpPost("CreateChatRoom")]
-        public async Task<IActionResult> CreateChatRoom([FromBody] C_Chat request)
+        public async Task<IActionResult> CreateChatRoom([FromBody] CreateChatRequest request)
         {
-            if (request.Members == null || !request.Members.Any())
+            if (request.UserId == null)
             {
                 return BadRequest("Members list cannot be empty.");
             }
 
+            string myId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             C_Chat newChatRoom = new C_Chat
             {
-                Members = request.Members,
+                Members = { request.UserId, myId },
                 IsGroup = false,
                 CreatedAt = DateTime.Now
             };
@@ -116,7 +121,15 @@ namespace ChatAppNETCore.Controllers.apis
             _context.C_Chats.Add(newChatRoom);
             await _context.SaveChangesAsync();
 
-            return Ok(newChatRoom);
+            Guid userId = new Guid(request.UserId);
+            C_User user = await _userService.GetUserById(userId);
+
+            return Ok(new ChatListViewModel
+            {
+                Id = newChatRoom.Id,
+                isGroup = newChatRoom.IsGroup,
+                Partner = user
+            });
         }
 
         [HttpGet("{id}")]
@@ -134,6 +147,11 @@ namespace ChatAppNETCore.Controllers.apis
     }
 
     public class FindChatsRequest
+    {
+        public string UserId { get; set; }
+    }
+
+    public class CreateChatRequest
     {
         public string UserId { get; set; }
     }

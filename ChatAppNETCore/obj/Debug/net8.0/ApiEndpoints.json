@@ -35,7 +35,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "ChatAppNETCore.Models.C_Chat",
+        "Type": "ChatAppNETCore.Controllers.apis.CreateChatRequest",
         "IsRequired": true
       }
     ],

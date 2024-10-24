@@ -119,10 +119,10 @@ function joinRoom(room) {
     });
 }
 
-async function openChatRoom(chatId, userName, myId) {
+async function openChatRoom(chatId, userId, userName, myId) {
     const allChatUsers = document.querySelectorAll('.chat-user');
     const userChat = document.getElementById(`${userId}`);
-    
+    console.log(userId, userChat);
     if (userChat.getAttribute('is-open') == 'false') {
 
         allChatUsers.forEach(user => {
@@ -134,7 +134,7 @@ async function openChatRoom(chatId, userName, myId) {
         userChat.classList.remove('new-message');
 
         const clickedUserChat = event.currentTarget;
-         clickedUserChat.classList.add('active');
+        clickedUserChat.classList.add('active');
 
          try {
              await fetch(`/api/ChatApi/GetMessages/${chatId}`)
@@ -155,9 +155,9 @@ async function openChatRoom(chatId, userName, myId) {
                     if (!messages || messages.length === 0) {
 
                         const html = `
-                        <div class="user-joined">
-                            <p><b>No messages yet</b></p>
-                        </div>
+                            <div class="user-joined">
+                                <p><b>No messages yet</b></p>
+                            </div>
                         `;
 
                         const chatContentDiv = document.getElementById('chat-content');
@@ -206,23 +206,69 @@ async function openChatRoom(chatId, userName, myId) {
     }
 }
 
-function createChat(userId, myId) {
+async function createChat(userId) {
     try {
         await fetch('api/ChatApi/CreateChatRoom', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ Members: [userId, myId] }),
+            body: JSON.stringify({ UserId: userId }),
         }).then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
             return response.json();
+        }).then(chat => {
+            offOverlay();
+            addNewChatToList(chat);
+            openChatRoom(chat.id, chat.partner.id, chat.partner.name, currentUserId);
         })
     } catch (error) {
         console.error('Error create chat:', error);
     }
+}
+
+function addNewChatToList(chat) {
+    console.log(chat);
+    const listChat = document.querySelector('.list-chat');
+
+    const newChatItem = document.createElement('li');
+    newChatItem.classList.add('chat-user');
+    newChatItem.id = chat.partner.id;
+    newChatItem.setAttribute('is-open', 'false');
+    newChatItem.setAttribute('onclick', `openChatRoom('${chat.id}', '${chat.partner.id}', '${chat.partner.name}', '${currentUserId}')`);
+
+    newChatItem.innerHTML = `
+        <div class="info">
+            <div class="position-relative">
+                <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
+                <div class="user-online"></div>
+            </div>
+            <p class="px-2">${chat.partner.name}</p>
+        </div>
+        <div class="dot-red"></div>
+    `;
+
+    listChat.appendChild(newChatItem);
+}
+
+const userList = document.querySelector('.user-list');
+
+function openSelectUser() {
+    userList.style.right = '0';
+    userList.style.opacity = '1';
+    onOverlay();
+}
+
+function onOverlay() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function offOverlay() {
+    document.getElementById("overlay").style.display = "none";
+    userList.style.right = '-400px';
+    userList.style.opacity = '0';
 }
 
 //document.getElementById("joinRoomButton").addEventListener("click", function (event) {

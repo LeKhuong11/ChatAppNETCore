@@ -26,6 +26,17 @@ namespace ChatAppNETCore.Services
             return null;
         }
 
+        public async Task<C_User> GetUserById(Guid userId)
+        {
+            var user = _context.C_Users.FirstOrDefault(u => u.Id == userId);
+
+            if (user != null) { 
+                return user;
+            }
+
+            return null;
+        }
+
         public async Task<List<C_User>> getAllUserWithOutCurrentUser(string userId)
         {
             var users = await _context.C_Users
