@@ -1,8 +1,6 @@
 ﻿using ChatAppNETCore.Models;
 using ChatAppNETCore.ViewModels;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
 
 namespace ChatAppNETCore.Services
 {
@@ -30,6 +28,11 @@ namespace ChatAppNETCore.Services
                     Id = chat.Id,
                     CreatedAt = chat.CreatedAt,
                     isGroup = chat.IsGroup,
+
+                    Message = _context.C_Messages
+                        .Where(m => m.ChatId == chat.Id.ToString())
+                        .OrderByDescending(m => m.CreatedAt)
+                        .FirstOrDefault(),
 
                     Members = chat.IsGroup ? _context.C_Users
                         .Where(u => chat.Members.Contains(u.Id.ToString())).ToList() : null,

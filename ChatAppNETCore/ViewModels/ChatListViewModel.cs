@@ -7,10 +7,14 @@ namespace ChatAppNETCore.ViewModels
         public int Id { get; set; }
 
         public bool isGroup { get; set; }
+        
+        public bool isNewChat { get; set; }
 
-        public C_User Partner { get; set; }
+        public C_Message? Message { get; set; }
 
-        public List<C_User> Members { get; set; }
+        public C_User? Partner { get; set; }
+
+        public List<C_User>? Members { get; set; }
 
         public DateTime CreatedAt { get; set; }
     }

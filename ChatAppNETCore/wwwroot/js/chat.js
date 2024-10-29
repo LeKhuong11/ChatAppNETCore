@@ -37,11 +37,13 @@ connection.on("NotificationMessage", (notification, message, senderName) => {
     const toast = new bootstrap.Toast(toastElement);
     toast.show();
 
-    //mark unread on user chat
+    // Mark unread on user chat
     const userChat = document.getElementById(`${notification.senderId.toLowerCase()}`);
     if (userChat.getAttribute('is-open') == 'false') {
         userChat.classList.add('new-message');
     }
+    // Update message content in message child
+    userChat.querySelector('.message-child').innerHTML = `${notification.ReceiveId == currentUserId ? 'You: ' + message.content : message.content}`;
 });
 
 connection.on("JoinRoomMessage", (userName, userId) => {
@@ -63,13 +65,13 @@ connection.on("JoinRoomMessage", (userName, userId) => {
     });
 })
 
-connection.on("userConnection", (usersOnline) => { 
+connection.on("userConnection", (usersOnline) => {
     const allChatUsers = document.querySelectorAll('.chat-user');
-    
+
     allChatUsers.forEach(user => {
         const id = user.getAttribute('id').toUpperCase();
 
-        usersOnline.forEach(userOnline => { 
+        usersOnline.forEach(userOnline => {
             if (userOnline.value.userId == id) {
                 const userOnlineEle = user.querySelector('.user-online');
 
@@ -101,10 +103,14 @@ function sendMessages(room, toUserId, event) {
         const chatContentDiv = document.getElementById('chat-content');
         chatContentDiv.scrollTo({
             top: chatContentDiv.scrollHeight,
-            behavior: 'smooth' 
+            behavior: 'smooth'
         });
-        
+
+        const userChat = document.getElementById(`${toUserId}`);
+        userChat.querySelector('.message-child').innerHTML = `You: ${message.value}`;
+
         message.value = "";
+
     }).catch(function (err) {
         return console.error(err.toString());
     });
@@ -113,7 +119,7 @@ function sendMessages(room, toUserId, event) {
 
 function joinRoom(room) {
     connection.invoke("JoinRoom", `${room}`).then(() => {
-       
+
     }).catch(function (err) {
         return console.error(err.toString());
     });
@@ -122,7 +128,7 @@ function joinRoom(room) {
 async function openChatRoom(chatId, userId, userName, myId) {
     const allChatUsers = document.querySelectorAll('.chat-user');
     const userChat = document.getElementById(`${userId}`);
-    console.log(userId, userChat);
+
     if (userChat.getAttribute('is-open') == 'false') {
 
         allChatUsers.forEach(user => {
@@ -136,21 +142,22 @@ async function openChatRoom(chatId, userId, userName, myId) {
         const clickedUserChat = event.currentTarget;
         clickedUserChat.classList.add('active');
 
-         try {
-             await fetch(`/api/ChatApi/GetMessages/${chatId}`)
+
+        try {
+            await fetch(`/api/ChatApi/GetMessages/${chatId}`)
                 .then(response => {
                     return response.json();
                 })
                 .then(messages => {
-
                     const chatContentDiv = document.getElementById('chat-content');
-                    const chatRoom = document.querySelector('.chat-room');
                     const chatInput = document.querySelector('.chat-input');
+                    const chatWith = document.querySelector('.chat-with');
 
 
                     // Clear Chat content (if any)
                     chatContentDiv.innerHTML = '';
                     chatInput.innerHTML = '';
+                    chatWith.innerHTML = `Chat with ${userName}`;
 
                     if (!messages || messages.length === 0) {
 
@@ -165,45 +172,48 @@ async function openChatRoom(chatId, userId, userName, myId) {
                         divElement.innerHTML = html;
                         chatContentDiv.appendChild(divElement);
                     } else {
-                        const chatWith = document.querySelector('.chat-with');
-                        chatWith.innerHTML = `Chat with ${userName}`;
-
                         // Add each message to chatContentDiv
-                        messages.forEach(message => {
-                            const messageElement = document.createElement('div');
-                            messageElement.classList.add('chat-message');
-
-                            messageElement.innerHTML = `
-                            <div class="message ${message.senderId == myId ? "sent-by-me" : ""}">
-                                <p>${message.content}</p>
-                                <span>${new Date(message.createdAt).toLocaleString()}</span>
-                            </div>
-                            `;
-
-                            chatContentDiv.appendChild(messageElement);
-                        });
-
-                        // Scroll to the bottom
-                        chatContentDiv.scrollTop = chatContentDiv.scrollHeight;
+                        renderMessage(messages);
                     }
 
                     // HTML nhập tin nhắn
                     chatInput.innerHTML += `
-                    <div>
-                        <form id="form-message" class="message-input" action="#" onsubmit="sendMessages(${chatId}, '${userId}', event)">
-                            <input type="text" id="messageInput" placeholder="Type a message..." />
-                            <button type="submit" id="sendMessageButton" onclick="sendMessages(${chatId}, '${userId}', event)">Send</button>
-                        </form>
-                    </div>
+                        <div>
+                            <form id="form-message" class="message-input" action="#" onsubmit="sendMessages(${chatId}, '${userId}', event)">
+                                <input type="text" id="messageInput" placeholder="Type a message..." />
+                                <button type="submit" id="sendMessageButton" onclick="sendMessages(${chatId}, '${userId}', event)">Send</button>
+                            </form>
+                        </div>
                     `;
 
                     joinRoom(chatId);
                 })
 
-         } catch (error) {
-             console.error('Error fetching message:', error);
-         }
+        } catch (error) {
+            console.error('Error fetching message:', error);
+        }
     }
+}
+
+function renderMessage(messages) {
+    const chatContentDiv = document.getElementById('chat-content');
+
+    messages.forEach(message => {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('chat-message');
+
+        messageElement.innerHTML = `
+            <div class="message ${message.senderId == currentUserId ? "sent-by-me" : ""}">
+                <p>${message.content}</p>
+                <span>${new Date(message.createdAt).toLocaleString()}</span>
+            </div>
+        `;
+
+        chatContentDiv.appendChild(messageElement);
+    });
+
+    // Scroll to the bottom
+    chatContentDiv.scrollTop = chatContentDiv.scrollHeight;
 }
 
 async function createChat(userId) {
@@ -220,23 +230,66 @@ async function createChat(userId) {
             }
             return response.json();
         }).then(chat => {
+            if (chat.isNewChat) {
+                addNewChatToList(chat);
+            }
             offOverlay();
-            addNewChatToList(chat);
-            openChatRoom(chat.id, chat.partner.id, chat.partner.name, currentUserId);
+            createChatRoom(chat);
         })
     } catch (error) {
         console.error('Error create chat:', error);
     }
 }
 
+function createChatRoom(chat) {
+    const chatContentDiv = document.getElementById('chat-content');
+    const chatInput = document.querySelector('.chat-input');
+    const chatWith = document.querySelector('.chat-with');
+    chatWith.innerHTML = `Chat with ${chat.partner.name}`;
+
+    // Clear Chat content (if any)
+    chatContentDiv.innerHTML = '';
+
+    if (chat.isNewChat) {
+        const html = `
+            <div class="user-joined">
+                <p><b>${chat.partner.name} is waiting for your message!</b></p>
+            </div>
+        `;
+        const divElement = document.createElement('div');
+        divElement.innerHTML = html;
+        chatContentDiv.appendChild(divElement);
+    } else {
+        renderMessage(chat.messages);
+    }
+
+    chatInput.innerHTML = '';
+    chatInput.innerHTML += `
+        <div>
+            <form id="form-message" class="message-input" action="#" onsubmit="sendMessages(${chat.id}, '${chat.partner.id}', event)">
+                <input type="text" id="messageInput" placeholder="Type a message..." />
+                <button type="submit" id="sendMessageButton" onclick="sendMessages(${chat.id}, '${chat.partner.id}', event)">Send</button>
+            </form>
+        </div>  
+    `;
+
+    joinRoom(chat.id);
+}
+
 function addNewChatToList(chat) {
-    console.log(chat);
+    const allChatUsers = document.querySelectorAll('.chat-user');
     const listChat = document.querySelector('.list-chat');
 
+    //remove previous active
+    allChatUsers.forEach(user => {
+        user.classList.remove('active');
+        user.setAttribute('is-open', false);
+    });
+
     const newChatItem = document.createElement('li');
-    newChatItem.classList.add('chat-user');
+    newChatItem.classList.add('chat-user', 'active');
     newChatItem.id = chat.partner.id;
-    newChatItem.setAttribute('is-open', 'false');
+    newChatItem.setAttribute('is-open', 'true');
     newChatItem.setAttribute('onclick', `openChatRoom('${chat.id}', '${chat.partner.id}', '${chat.partner.name}', '${currentUserId}')`);
 
     newChatItem.innerHTML = `

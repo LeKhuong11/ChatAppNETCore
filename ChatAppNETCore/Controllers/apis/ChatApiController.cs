@@ -2,9 +2,7 @@
 using ChatAppNETCore.Services;
 using ChatAppNETCore.ViewModels;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
 namespace ChatAppNETCore.Controllers.apis
@@ -111,9 +109,26 @@ namespace ChatAppNETCore.Controllers.apis
 
             string myId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+            C_Chat existingChat = await Task.Run(() => _context.C_Chats.FirstOrDefault(chat => chat.Members.Contains(myId) && chat.Members.Contains(request.UserId)));
+
+            if(existingChat != null)
+            {
+                var messages = await Task.Run(() => _context.C_Messages
+                    .Where(message => message.ChatId == existingChat.Id.ToString())
+                    .OrderBy(message => message.CreatedAt)
+                    .ToList());
+
+                return Ok(new
+                {
+                    ChatRoom = existingChat,
+                    Messages = messages,
+                    isNewChat = false
+                });
+            }
+
             C_Chat newChatRoom = new C_Chat
             {
-                Members = { request.UserId, myId },
+                Members = new List<string> { request.UserId.ToUpper(), myId.ToUpper() },
                 IsGroup = false,
                 CreatedAt = DateTime.Now
             };
@@ -128,6 +143,7 @@ namespace ChatAppNETCore.Controllers.apis
             {
                 Id = newChatRoom.Id,
                 isGroup = newChatRoom.IsGroup,
+                isNewChat = true,
                 Partner = user
             });
         }
