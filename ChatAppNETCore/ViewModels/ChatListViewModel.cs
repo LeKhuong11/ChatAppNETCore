@@ -16,6 +16,8 @@ namespace ChatAppNETCore.ViewModels
 
         public List<C_User>? Members { get; set; }
 
+        public int MessagesUnRead { get; set; }
+
         public DateTime CreatedAt { get; set; }
     }
 }

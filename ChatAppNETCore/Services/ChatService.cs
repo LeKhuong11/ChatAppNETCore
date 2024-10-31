@@ -19,10 +19,10 @@ namespace ChatAppNETCore.Services
             _context = context;
         }
 
-        public async Task<List<ChatListViewModel>> GetChatsByUserId(string userId)
+        public async Task<List<ChatListViewModel>> GetChatsByUserId(string myId)
         {
             var chats = await _context.C_Chats
-                .Where(chat => chat.Members.Contains(userId))
+                .Where(chat => chat.Members.Contains(myId))
                 .Select(chat => new ChatListViewModel
                 {
                     Id = chat.Id,
@@ -34,11 +34,16 @@ namespace ChatAppNETCore.Services
                         .OrderByDescending(m => m.CreatedAt)
                         .FirstOrDefault(),
 
+
                     Members = chat.IsGroup ? _context.C_Users
                         .Where(u => chat.Members.Contains(u.Id.ToString())).ToList() : null,
 
                     Partner = !chat.IsGroup ? _context.C_Users
-                        .FirstOrDefault(u => chat.Members.Contains(u.Id.ToString()) && u.Id.ToString() != userId) : null
+                        .FirstOrDefault(u => chat.Members.Contains(u.Id.ToString()) && u.Id.ToString() != myId) : null,
+
+                    MessagesUnRead = _context.C_Messages
+                        .Where(m => m.ChatId == chat.Id.ToString() && !m.isRead && m.SenderId != myId)
+                        .Count(),
                 })
                 .ToListAsync();
 

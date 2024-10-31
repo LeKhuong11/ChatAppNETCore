@@ -37,7 +37,7 @@
             <ul class="list-chat">
                 @foreach (var chat in chats)
                 {
-                    <li class="chat-user" id="@chat.Partner.Id" onclick="openChatRoom('@chat.Id', '@chat.Partner.Id', '@chat.Partner.Name', '@currentUserId')" is-open="false">
+                    <li class="chat-user @(chat.MessagesUnRead > 0 ? "new-message" : "")" id="@chat.Partner.Id" onclick="openChatRoom('@chat.Id', '@chat.Partner.Id', '@chat.Partner.Name', '@currentUserId')" is-open="false">
                         <div class="info">
                             <div class="position-relative">
                                 <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
@@ -49,11 +49,14 @@
                                     @if (chat.Message != null)
                                     {
                                         @(chat.Message.SenderId == currentUserId ? "You: " + chat.Message.Content : chat.Message.Content)
-                                    }
+                                    }                                   
                                 </p>
                             </div>
                         </div>
-                        <div class="dot-red"></div>
+                        @if (chat.MessagesUnRead > 0)
+                        {
+                            <div class="notification dot-red">@chat.MessagesUnRead</div>
+                        }
                     </li>
                 }
             </ul>
@@ -237,12 +240,15 @@
         }
 
         .new-message .dot-red {
-            width: 10px;
-            height: 10px;
-            background: red;
+            width: 15px;
+            height: 15px;
+            background: #e30000;
             border-radius: 50%;
             position: absolute;
             right: 13px;
+            color: #fff;
+            text-align: center;
+            font-size: 11px;
         }
 
         .new-message p{

@@ -41,11 +41,12 @@ connection.on("NotificationMessage", (notification, message, senderName) => {
     const userChat = document.getElementById(`${notification.senderId.toLowerCase()}`);
     if (userChat.getAttribute('is-open') == 'false') {
         userChat.classList.add('new-message');
+
     }
     // Update message content in message child
     userChat.querySelector('.message-child').innerHTML = `${notification.ReceiveId == currentUserId ? 'You: ' + message.content : message.content}`;
 });
-
+    
 connection.on("JoinRoomMessage", (userName, userId) => {
     const html = `
         <div class="user-joined">
@@ -115,7 +116,7 @@ function sendMessages(room, toUserId, event) {
         return console.error(err.toString());
     });
 }
-
+    
 
 function joinRoom(room) {
     connection.invoke("JoinRoom", `${room}`).then(() => {
@@ -125,19 +126,36 @@ function joinRoom(room) {
     });
 }
 
+
+async function markAsRead(chatId, userChat) {
+
+    try {
+        await fetch(`api/chatApi/MarkAsRead/${chatId}`)
+            .then(response => {
+                return response.json();
+            }) 
+            .then(data => {
+                const notificationDotRed = userChat.querySelector('.notification');
+                notificationDotRed.textContent = '';
+                userChat.setAttribute('is-open', true);
+                userChat.classList.remove('new-message');
+            })
+    } catch (error) {
+        console.error('Error fetching message:', error);
+    }
+}
+
 async function openChatRoom(chatId, userId, userName, myId) {
     const allChatUsers = document.querySelectorAll('.chat-user');
     const userChat = document.getElementById(`${userId}`);
 
     if (userChat.getAttribute('is-open') == 'false') {
+        markAsRead(chatId, userChat);
 
         allChatUsers.forEach(user => {
             user.classList.remove('active');
             user.setAttribute('is-open', false);
         });
-
-        userChat.setAttribute('is-open', true);
-        userChat.classList.remove('new-message');
 
         const clickedUserChat = event.currentTarget;
         clickedUserChat.classList.add('active');

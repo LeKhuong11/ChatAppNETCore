@@ -93,5 +93,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatAppNETCore.Controllers.apis.ChatApiController",
+    "Method": "MarkAsRead",
+    "RelativePath": "api/ChatApi/MarkAsRead/{chatId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

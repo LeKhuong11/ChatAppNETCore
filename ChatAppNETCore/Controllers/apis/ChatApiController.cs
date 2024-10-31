@@ -3,6 +3,7 @@ using ChatAppNETCore.Services;
 using ChatAppNETCore.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
 namespace ChatAppNETCore.Controllers.apis
@@ -57,6 +58,25 @@ namespace ChatAppNETCore.Controllers.apis
             return Ok(messages);
         }
 
+        [HttpGet("MarkAsRead/{chatId}")]
+        public async Task<IActionResult> MarkAsRead(string chatId)
+        {
+            string myId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var unReadMessage = await _context.C_Messages
+                .Where(m => m.ChatId == chatId && !m.isRead && m.SenderId != myId)
+                .ToListAsync();
+
+            unReadMessage.ForEach(message => message.isRead = true);
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                message = "All messages marked as read.",
+                status = true
+            });
+        }
 
         [HttpPost("FindOrCreateChatRoom")]
         public async Task<IActionResult> FindOrCreateChatRoom([FromBody] FindChatsRequest request)

@@ -20,6 +20,24 @@
         .user-name, .logout {
             font-family: "Varela Round", sans-serif;
         }
+
+        .notifications {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .notifications p {
+            position: absolute;
+            top: -4px;
+            right: -6px;
+            color: #fff;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #e30000;
+            font-size: 11px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -38,12 +56,16 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Chat" asp-action="Index">Chat</a>
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="notifications mx-3">
+                <i class="fa-regular fa-bell fa-xl" style="color: #74C0FC;"></i>
+                <p>55</p>
             </div>
             @if (User.Identity.IsAuthenticated)
             {

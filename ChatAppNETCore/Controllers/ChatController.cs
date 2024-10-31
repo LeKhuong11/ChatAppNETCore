@@ -21,9 +21,9 @@ namespace ChatAppNETCore.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var chats = await _chatService.GetChatsByUserId(userId);
-            var users = await _userService.getAllUserWithOutCurrentUser(userId);
+            var myId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var chats = await _chatService.GetChatsByUserId(myId);
+            var users = await _userService.getAllUserWithOutCurrentUser(myId);
 
             ViewBag.Chats = chats;
             ViewBag.Users = users;

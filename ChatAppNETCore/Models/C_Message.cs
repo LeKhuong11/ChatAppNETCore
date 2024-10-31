@@ -14,7 +14,12 @@ namespace ChatAppNETCore.Models
         public string SenderId { get; set; }
 
         [Required]
+        public string ReceiverId { get; set; }
+            
+        [Required]
         public string Content { get; set; }
+
+        public bool isRead { get; set; } = false;
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
