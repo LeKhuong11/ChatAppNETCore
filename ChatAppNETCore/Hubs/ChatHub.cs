@@ -81,7 +81,7 @@ namespace ChatAppNETCore.Hubs
             string userName = Context.User.Identity.Name;
 
             C_Message chatMessage = new C_Message
-            {
+            { 
                 ChatId = room,
                 SenderId = userId,
                 ReceiverId = toUserId,
@@ -116,7 +116,6 @@ namespace ChatAppNETCore.Hubs
             await Groups.AddToGroupAsync(Context.ConnectionId, room);
             UserRooms[userId].Clear(); // Remove old room list
             UserRooms[userId].Add(room); // Add new room to list
-
             
             await Clients.Group(room).SendAsync("JoinRoomMessage", userName, userId.ToUpper());
         }
@@ -145,7 +144,13 @@ namespace ChatAppNETCore.Hubs
 
             if (isUserAvailable != null)
             {
-                await Clients.Client(isUserAvailable.ConnectionId).SendAsync("NotificationMessage", notification, message, senderName);
+                string userId = Context.UserIdentifier.ToUpper();
+
+                int messagesUnRead = _context.C_Messages
+                    .Where(m => m.ChatId == message.ChatId && !m.isRead && m.SenderId == userId)
+                    .Count();
+
+                await Clients.Client(isUserAvailable.ConnectionId).SendAsync("NotificationMessage", notification, message, senderName, messagesUnRead);
             }
         }
     }

@@ -2,9 +2,7 @@
 
 var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
 
-connection.start().then(function () {
-
-}).catch(function (err) {
+connection.start().catch(function (err) {
     return console.error(err.toString());
 });
 
@@ -28,7 +26,7 @@ connection.on("ReceiveMessage", (message) => {
     });
 });
 
-connection.on("NotificationMessage", (notification, message, senderName) => {
+connection.on("NotificationMessage", (notification, message, senderName, messagesUnRead) => {
 
     document.getElementById('toastMessageContent').innerText = `${senderName}: ${message.content}`;
     document.getElementById('messageFrom').innerText = `New message from ${senderName.toUpperCase()}`;
@@ -41,7 +39,7 @@ connection.on("NotificationMessage", (notification, message, senderName) => {
     const userChat = document.getElementById(`${notification.senderId.toLowerCase()}`);
     if (userChat.getAttribute('is-open') == 'false') {
         userChat.classList.add('new-message');
-
+        userChat.querySelector('.notification').innerHTML = messagesUnRead;
     }
     // Update message content in message child
     userChat.querySelector('.message-child').innerHTML = `${notification.ReceiveId == currentUserId ? 'You: ' + message.content : message.content}`;
@@ -153,12 +151,12 @@ async function openChatRoom(chatId, userId, userName, myId) {
         markAsRead(chatId, userChat);
 
         allChatUsers.forEach(user => {
-            user.classList.remove('active');
+            user.classList.remove('active-chat');
             user.setAttribute('is-open', false);
         });
 
         const clickedUserChat = event.currentTarget;
-        clickedUserChat.classList.add('active');
+        clickedUserChat.classList.add('active-chat');
 
 
         try {
@@ -250,6 +248,8 @@ async function createChat(userId) {
         }).then(chat => {
             if (chat.isNewChat) {
                 addNewChatToList(chat);
+            } else {
+                toastr.warning("This user already exists in the chat system");
             }
             offOverlay();
             createChatRoom(chat);
@@ -300,12 +300,12 @@ function addNewChatToList(chat) {
 
     //remove previous active
     allChatUsers.forEach(user => {
-        user.classList.remove('active');
+        user.classList.remove('active-chat');
         user.setAttribute('is-open', false);
     });
 
     const newChatItem = document.createElement('li');
-    newChatItem.classList.add('chat-user', 'active');
+    newChatItem.classList.add('chat-user', 'active-chat');
     newChatItem.id = chat.partner.id;
     newChatItem.setAttribute('is-open', 'true');
     newChatItem.setAttribute('onclick', `openChatRoom('${chat.id}', '${chat.partner.id}', '${chat.partner.name}', '${currentUserId}')`);
@@ -316,9 +316,12 @@ function addNewChatToList(chat) {
                 <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
                 <div class="user-online"></div>
             </div>
-            <p class="px-2">${chat.partner.name}</p>
+            <div class="px-2">
+                <p>${chat.partner.name}</p>
+                <p class="message-child"></p>
+            </div>
         </div>
-        <div class="dot-red"></div>
+        <div class="notification dot-red"></div>
     `;
 
     listChat.appendChild(newChatItem);

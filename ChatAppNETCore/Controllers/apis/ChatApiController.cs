@@ -77,7 +77,7 @@ namespace ChatAppNETCore.Controllers.apis
                 status = true
             });
         }
-
+            
         [HttpPost("FindOrCreateChatRoom")]
         public async Task<IActionResult> FindOrCreateChatRoom([FromBody] FindChatsRequest request)
         {
@@ -99,7 +99,7 @@ namespace ChatAppNETCore.Controllers.apis
                     Messages = messages
                 });
             }
-
+                
             // Nếu chưa có phòng chat, tạo phòng chat mới
             C_Chat newChatRoom = new C_Chat
             {
@@ -162,7 +162,6 @@ namespace ChatAppNETCore.Controllers.apis
             return Ok(new ChatListViewModel
             {
                 Id = newChatRoom.Id,
-                isGroup = newChatRoom.IsGroup,
                 isNewChat = true,
                 Partner = user
             });

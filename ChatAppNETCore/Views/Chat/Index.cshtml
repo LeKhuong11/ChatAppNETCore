@@ -4,6 +4,7 @@
 @{
     ViewData["Title"] = "Chat screen";
     var chats = ViewBag.Chats as List<ChatListViewModel>;
+    var groups = ViewBag.Groups as List<GroupListViewModel>;
     var users = ViewBag.Users as List<C_User>;
 
     var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier).ToUpper();
@@ -20,11 +21,11 @@
 
 <div class="chat-container">
     <div class="chat-list">
-        <h3>Chat List</h3>
+        <h3>Chat List s1</h3>
         @if (chats.Any())
         {
             <div class="create-chat">
-                <p>New chat </p>
+                <p>New chat</p>
                 <div class="d-flex">
                     <div class="px-2 cursor-pointer" title="New chat" onclick="openSelectUser()">
                         <i class="fa-solid fa-user-plus"></i>
@@ -34,32 +35,73 @@
                     </div>
                 </div>
             </div>
-            <ul class="list-chat">
-                @foreach (var chat in chats)
-                {
-                    <li class="chat-user @(chat.MessagesUnRead > 0 ? "new-message" : "")" id="@chat.Partner.Id" onclick="openChatRoom('@chat.Id', '@chat.Partner.Id', '@chat.Partner.Name', '@currentUserId')" is-open="false">
-                        <div class="info">
-                            <div class="position-relative">
-                                <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
-                                <div class="user-online"></div>
-                            </div>
-                            <div class="px-2">
-                                <p>@chat.Partner.Name</p>
-                                <p class="message-child">
-                                    @if (chat.Message != null)
-                                    {
-                                        @(chat.Message.SenderId == currentUserId ? "You: " + chat.Message.Content : chat.Message.Content)
-                                    }                                   
-                                </p>
-                            </div>
-                        </div>
-                        @if (chat.MessagesUnRead > 0)
-                        {
-                            <div class="notification dot-red">@chat.MessagesUnRead</div>
-                        }
+            <div>
+                <ul id="myTab" role="tablist" class="nav nav-tabs">
+                    <li role="presentation" class="nav-item">
+                        <button id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" class="nav-link text-muted active">
+                            Chat
+                        </button>
                     </li>
-                }
-            </ul>
+                    <li role="presentation" class="nav-item">
+                        <button id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" class="nav-link text-muted" tabindex="-1">
+                            Group
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <ul class="list-chat">
+                            @foreach (var chat in chats)
+                            {
+                                <li class="chat-user @(chat.MessagesUnRead > 0 ? "new-message" : "")" id="@chat.Partner.Id" onclick="openChatRoom('@chat.Id', '@chat.Partner.Id', '@chat.Partner.Name', '@currentUserId')" is-open="false">
+                                    <div class="info">
+                                        <div class="position-relative">
+                                            <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
+                                            <div class="user-online"></div>
+                                        </div>
+                                        <div class="px-2">
+                                            <p>@chat.Partner.Name</p>
+                                            <p class="message-child">
+                                                @if (chat.LatestMessage != null)
+                                                {
+                                                    @(chat.LatestMessage.SenderId == currentUserId ? "You: " + chat.LatestMessage.Content : chat.LatestMessage.Content)
+                                                }
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="notification dot-red">@(chat.MessagesUnRead > 0 ? @chat.MessagesUnRead : "")</div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <ul class="list-chat">
+                            @foreach (var group in groups)
+                            {
+                                <li class="chat-user " id="123123" onclick="" is-open="false">
+                                    <div class="info">
+                                        <div class="position-relative">
+                                            <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
+                                            <div class="user-online"></div>
+                                        </div>
+                                        <div class="px-2">
+                                            <p>@group.GroupName</p>
+                                            <p class="message-child">
+                                                @if (group.LatestMessage != null)
+                                                {
+                                                    @(group.LatestMessage.SenderId == currentUserId ? "You: " + group.LatestMessage.Content : $"User: " + group.LatestMessage.Content)
+                                                }
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="notification dot-red"></div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
         } else {
             <div class="mt-4">
                 <p class="label text-center">There have been no conversations yet</p>
@@ -285,7 +327,7 @@
             background-color: #e9ecef;
         }
 
-        .active {
+        .active-chat {
             background-color: #77CDFF;
             color: #fff;
             border-radius: 4px;

@@ -23,9 +23,11 @@ namespace ChatAppNETCore.Controllers
         {
             var myId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var chats = await _chatService.GetChatsByUserId(myId);
-            var users = await _userService.getAllUserWithOutCurrentUser(myId);
+            var groups = await _chatService.getGroupByUserId(myId);
+            var users = await _userService.GetAllUserWithOutCurrentUser(myId);
 
             ViewBag.Chats = chats;
+            ViewBag.Groups = groups;
             ViewBag.Users = users;
 
             return View();
