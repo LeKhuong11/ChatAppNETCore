@@ -128,6 +128,8 @@ namespace ChatAppNETCore.Controllers.apis
             }
 
             string myId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            Guid userId = new Guid(request.UserId);
+            C_User user = await _userService.GetUserById(userId);
 
             C_Chat existingChat = await Task.Run(() => _context.C_Chats.FirstOrDefault(chat => chat.Members.Contains(myId) && chat.Members.Contains(request.UserId)));
 
@@ -142,7 +144,8 @@ namespace ChatAppNETCore.Controllers.apis
                 {
                     ChatRoom = existingChat,
                     Messages = messages,
-                    isNewChat = false
+                    isNewChat = false,
+                    Partner = user
                 });
             }
 
@@ -155,9 +158,6 @@ namespace ChatAppNETCore.Controllers.apis
 
             _context.C_Chats.Add(newChatRoom);
             await _context.SaveChangesAsync();
-
-            Guid userId = new Guid(request.UserId);
-            C_User user = await _userService.GetUserById(userId);
 
             return Ok(new ChatListViewModel
             {

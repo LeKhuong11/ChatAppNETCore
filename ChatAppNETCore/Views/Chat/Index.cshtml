@@ -10,15 +10,6 @@
     var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier).ToUpper();
 }
 
-@if (@TempData["SuccessMessage"] != null)
-{
-    <script src="/lib/jquery/dist/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    <script type="text/javascript">
-        toastr.success('@TempData["SuccessMessage"]')
-    </script>
-}
-
 <div class="chat-container">
     <div class="chat-list">
         <h3>Chat List s1</h3>
@@ -166,17 +157,124 @@
     </div>
 </div>
 
+
+<div class="create-group-model">
+    <h3 class="text-center mt-1">Create group</h3>
+    <div class="form__group field px-2">
+        <input type="text" class="form__field" placeholder="Enter group name..." name="group-name" required />
+        <label for="name" class="form__label">Group Name</label>
+    </div>
+
+    <div class="w-50 mt-2">
+        <div class="list">
+            <p class="font-weight-bold">Select user</p>
+            @foreach (var user in users)
+            {
+                <div class="user">
+                    <div class="info">
+                        <div class="position-relative">
+                            <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
+                            <div class="user-online"></div>
+                        </div>
+                        <p class="px-2">@user.Name</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
 <div id="overlay" onclick="offOverlay()"></div>
 
-
 <script>
-    var currentUserId = '@currentUserId';
+    const currentUserId = '@currentUserId';
 </script>
 
 <script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="/lib/jquery/dist/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+
+<script src="~/js/connect.js"></script>
 <script src="~/js/chat.js"></script>
+<script src="~/js/chatGroup.js"></script>
+
+@if (@TempData["SuccessMessage"] != null)
+{
+    <script type="text/javascript">
+        toastr.success('@TempData["SuccessMessage"]')
+    </script>
+}
 
 <style>
+    :root {
+        --primary: #11998e;
+        --secondary: #38ef7d;
+        --white: #fff;
+        --gray: #9b9b9b;
+    }
+
+    .form__group {
+        position: relative;
+        padding: 10px 0 0;
+    }
+
+    .form__field {
+        font-family: inherit;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #333;
+        outline: 0;
+        font-size: 1rem;
+        color: #333333;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+    }
+
+        .form__field::placeholder {
+            color: transparent;
+        }
+
+        .form__field:placeholder-shown ~ .form__label {
+            font-size: .8rem;
+            cursor: text;
+            top: 25px;
+        }
+
+    .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: .5rem;
+        color: var(--gray);
+    }
+
+    .form__field:focus {
+        ~ .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        padding-bottom: 6px;
+        font-weight: 700;
+        border-width: 1px;
+        border-image: linear-gradient(to right, var(--primary), var(--secondary));
+        border-image-slice: 1;
+    }
+
+    /* Reset input */
+    .form__field:required,
+    .form__field:invalid {
+        box-shadow: none;
+    }
+
     .message-child {
         font-size: 11.5px;
         color: #858585;
@@ -208,6 +306,23 @@
         font-size: 12px;
     }
 
+    .create-group-model {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        height: 500px;
+        padding: 0 10px;
+        background: #f5f5f5;
+        border: 2px solid #77CDFF;
+        border-radius: 3px;
+        z-index: 3;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        transition: right .3s ease-in-out, opacity .2s ease-in-out;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
     .user-list {
         position: fixed;
         top: 0;
@@ -224,26 +339,28 @@
     }
 
         .list {
+            flex-grow: 1;
             overflow-y: auto;
+            max-height: 100%;
         }
 
-            .user-list .user {
+            .list .user {
                 padding: 0 10px;
                 cursor: pointer;
             }
 
-            .user-list .user:hover {
+            .list .user:hover {
                 background-color: #e9ecef;
             }
 
-                .user-list .user .info {
+                .list .user .info {
                     display: flex;
                     align-items: center;
                     border-bottom: 1px solid #ccc;
                     padding: 8px 0;
                 }
 
-                    .user-list .user img {
+                    .list .user img {
                         border-radius: 50%;
                     }
 

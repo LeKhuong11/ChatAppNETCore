@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\Workspaces\\C#\\ChatAppNETCore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\wwwroot\\js\\connect.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\wwwroot\\js\\connect.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\wwwroot\\js\\chatgroup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\wwwroot\\js\\chatgroup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\controllers\\apis\\chatapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\controllers\\apis\\chatapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,28 +43,12 @@
       "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\models\\c_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\controllers\\apis\\chatapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\controllers\\apis\\chatapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|solutionrelative:chatappnetcore\\wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3FA7600C-B7DE-4E79-946D-86F4A4D761AC}|ChatAppNETCore\\ChatAppNETCore.csproj|d:\\workspaces\\c#\\chatappnetcore\\chatappnetcore\\viewmodels\\chatlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,11 +62,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "connect.js",
+              "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\connect.js",
+              "RelativeDocumentMoniker": "ChatAppNETCore\\wwwroot\\js\\connect.js",
+              "ToolTip": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\connect.js",
+              "RelativeToolTip": "ChatAppNETCore\\wwwroot\\js\\connect.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-06T04:07:40.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "chatGroup.js",
+              "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\chatGroup.js",
+              "RelativeDocumentMoniker": "ChatAppNETCore\\wwwroot\\js\\chatGroup.js",
+              "ToolTip": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\chatGroup.js",
+              "RelativeToolTip": "ChatAppNETCore\\wwwroot\\js\\chatGroup.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-06T04:04:28.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "C_Chat.cs",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Models\\C_Chat.cs",
               "RelativeDocumentMoniker": "ChatAppNETCore\\Models\\C_Chat.cs",
@@ -70,12 +100,11 @@
               "RelativeToolTip": "ChatAppNETCore\\Models\\C_Chat.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T02:02:58.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T02:02:58.095Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "ChatAppNETCore\\Controllers\\AuthController.cs",
@@ -83,12 +112,11 @@
               "RelativeToolTip": "ChatAppNETCore\\Controllers\\AuthController.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAwwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T04:22:14.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T04:22:14.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "ChatAppNETCore\\Views\\Auth\\Login.cshtml",
@@ -96,76 +124,63 @@
               "RelativeToolTip": "ChatAppNETCore\\Views\\Auth\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T04:19:42.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T04:19:42.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "ChatAppNETCore\\Hubs\\ChatHub.cs",
               "ToolTip": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Hubs\\ChatHub.cs",
               "RelativeToolTip": "ChatAppNETCore\\Hubs\\ChatHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T03:30:44.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "ChatAppNETCore\\Services\\UserService.cs",
-              "ToolTip": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Services\\UserService.cs",
-              "RelativeToolTip": "ChatAppNETCore\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T03:07:59.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "ChatApiController.cs",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Controllers\\apis\\ChatApiController.cs",
               "RelativeDocumentMoniker": "ChatAppNETCore\\Controllers\\apis\\ChatApiController.cs",
               "ToolTip": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Controllers\\apis\\ChatApiController.cs",
               "RelativeToolTip": "ChatAppNETCore\\Controllers\\apis\\ChatApiController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T08:48:04.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "chat.js",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\chat.js",
               "RelativeDocumentMoniker": "ChatAppNETCore\\wwwroot\\js\\chat.js",
               "ToolTip": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\chat.js",
               "RelativeToolTip": "ChatAppNETCore\\wwwroot\\js\\chat.js",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAkwCABAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-10T14:39:40.885Z"
+              "WhenOpened": "2024-10-10T14:39:40.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Views\\Chat\\Index.cshtml",
               "RelativeDocumentMoniker": "ChatAppNETCore\\Views\\Chat\\Index.cshtml",
               "ToolTip": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Views\\Chat\\Index.cshtml",
               "RelativeToolTip": "ChatAppNETCore\\Views\\Chat\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAqwJ8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-10T06:35:25.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ChatController.cs",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Controllers\\ChatController.cs",
               "RelativeDocumentMoniker": "ChatAppNETCore\\Controllers\\ChatController.cs",
@@ -173,12 +188,11 @@
               "RelativeToolTip": "ChatAppNETCore\\Controllers\\ChatController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T02:09:26.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T02:09:26.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ChatService.cs",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\Services\\ChatService.cs",
               "RelativeDocumentMoniker": "ChatAppNETCore\\Services\\ChatService.cs",
@@ -186,12 +200,11 @@
               "RelativeToolTip": "ChatAppNETCore\\Services\\ChatService.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAUwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T07:23:27.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T07:23:27.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "GroupListViewModel.cs",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\ViewModels\\GroupListViewModel.cs",
               "RelativeDocumentMoniker": "ChatAppNETCore\\ViewModels\\GroupListViewModel.cs",
@@ -199,12 +212,11 @@
               "RelativeToolTip": "ChatAppNETCore\\ViewModels\\GroupListViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T09:13:56.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T09:13:56.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ChatListViewModel.cs",
               "DocumentMoniker": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\ViewModels\\ChatListViewModel.cs",
               "RelativeDocumentMoniker": "ChatAppNETCore\\ViewModels\\ChatListViewModel.cs",
