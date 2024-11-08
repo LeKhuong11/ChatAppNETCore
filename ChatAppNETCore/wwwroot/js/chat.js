@@ -133,7 +133,7 @@ function renderMessage(messages) {
 
         chatContentDiv.appendChild(messageElement);
     });
-
+        
     // Scroll to the bottom
     chatContentDiv.scrollTop = chatContentDiv.scrollHeight;
 }

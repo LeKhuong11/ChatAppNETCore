@@ -24,12 +24,12 @@ namespace ChatAppNETCore.Controllers.apis
 
 
         [HttpPost("CreateGroup")]
-        public async Task<IActionResult> CreateGroup(string groupName, List<string> Members)
+        public async Task<IActionResult> CreateGroup([FromBody] CreateGroupRequest request)
         {
             var chat = new C_Chat
             {
-                GroupName = groupName,
-                Members = Members,
+                GroupName = request.GroupName,
+                Members = request.Members,
                 IsGroup = true,
                 CreatedAt = DateTime.Now
             };
@@ -189,6 +189,12 @@ namespace ChatAppNETCore.Controllers.apis
     public class CreateChatRequest
     {
         public string UserId { get; set; }
+    }
+
+    public class CreateGroupRequest
+    {
+        public string GroupName { get; set; }
+        public List<string> Members { get; set; }
     }
 }
 

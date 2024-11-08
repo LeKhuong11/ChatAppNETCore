@@ -31,3 +31,6 @@ msbuild.wrn
 # Visual Studio 2015
 .vs/
 /ChatAppNETCore/bin
+/.vs
+/ChatAppNETCore/bin
+/ChatAppNETCore/obj

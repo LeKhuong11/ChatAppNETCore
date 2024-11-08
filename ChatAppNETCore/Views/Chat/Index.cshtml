@@ -70,7 +70,7 @@
                         <ul class="list-chat">
                             @foreach (var group in groups)
                             {
-                                <li class="chat-user " id="123123" onclick="" is-open="false">
+                                <li class="chat-user " onclick="" is-open="false">
                                     <div class="info">
                                         <div class="position-relative">
                                             <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
@@ -176,38 +176,25 @@
                 <p class="font-weight-bold">Select user</p>
                 @foreach (var user in users)
                 {
-                    <div class="user" onclick="selectUserToGroup(@user.Id, @user.Name)">
-                        <div class="info">
-                            <div class="position-relative">
+                    <div class="user" onclick="addUserToGroupCreate('@user.Id', '@user.Name')">
+                        <input type="checkbox" id="checkbox-@user.Id" name="selected-user" onclick="event.stopPropagation()" />
+                        <label for="checkbox-@user.Id" class="position-relative px-2">
+                            <div class="info">
                                 <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
                                 <div class="user-online"></div>
+                                <p class="px-2">@user.Name</p>
                             </div>
-                            <p class="px-2">@user.Name</p>
-                        </div>
+                        </label>
                     </div>
                 }
             </div>
         </div>
         <div class="w-50 mt-3 selected-user-list">
-            <div class="user-selected">
-                <div class="d-flex">
-                    <img width="30" height="30" src="/images/avatar-default.jpg" alt="Avatar default" />
-                    <p>Le Khuong</p>
-                </div>
-                <div class="delete-user">
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </div>
-            </div>
-            <div class="user-selected">
-                <div class="d-flex">
-                    <img width="30" height="30" src="/images/avatar-default.jpg" alt="Avatar default" />
-                    <p>Le Khuong</p>
-                </div>
-                <div class="delete-user">
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </div>
-            </div>
+            
         </div>
+    </div>
+    <div class="btn-create-group" onclick="createGroup()">
+       <button>Create group</button>
     </div>
 </div>
 
@@ -232,10 +219,28 @@
         toastr.success('@TempData["SuccessMessage"]')
     </script>
 }
-
+    
 <style>
 
-    .user-selected {
+    .btn-create-group {
+        display: flex;
+        justify-content: end;
+    }
+
+        .btn-create-group button {
+            background: #11998e;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            transition: all .2s linear;
+            border-radius: 3px;
+        }
+
+        .btn-create-group button:hover {
+            background: #0e7f76;
+        }
+
+    .user-select {
         border-radius: 25px;
         background: rgb(119, 205, 255, .2);
         color: #0053ce;
@@ -247,12 +252,12 @@
         margin: 7px;
     }
 
-        .user-selected img {
+        .user-select img {
             border-radius: 50%;
             margin-right: 8px;
         }
 
-        .user-selected .delete-user {
+        .user-select .delete-user {
             cursor: pointer;
         }
 
@@ -327,13 +332,18 @@
     .user-group-list {
         flex-grow: 1;
         overflow-y: auto;
-        max-height: 350px;
+        max-height: 330px;
     }
 
         .user-group-list .user {
             padding: 0 10px;
             cursor: pointer;
+            display: flex;
         }
+
+            .user-group-list label {
+                width: 100%;
+            }
 
             .user-group-list .user:hover {
                 background-color: #e9ecef;
