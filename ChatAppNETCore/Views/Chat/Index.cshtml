@@ -21,7 +21,7 @@
                     <div class="px-2 cursor-pointer" title="New chat" onclick="openSelectUser()">
                         <i class="fa-solid fa-user-plus"></i>
                     </div>
-                    <div class="px-2 cursor-pointer" title="New group">
+                    <div class="px-2 cursor-pointer" title="New group" onclick="openModelCreateChat()">
                         <i class="fa-solid fa-users"></i>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                         <ul class="list-chat">
                             @foreach (var group in groups)
                             {
-                                <li class="chat-user " onclick="" is-open="false">
+                                <li class="chat-group" onclick="openGroup('@group.Id')" is-open="false">
                                     <div class="info">
                                         <div class="position-relative">
                                             <img width="50" height="50" src="/images/avatar-default.jpg" alt="Avatar default" />
@@ -165,7 +165,7 @@
             <i class="fa-solid fa-camera"></i>
         </div>
         <div class="form__group field px-2">
-            <input type="text" class="form__field" placeholder="Enter group name..." name="group-name" required />
+            <input type="text" class="form__field input-group-name" placeholder="Enter group name..." name="group-name" required />
             <label for="name" class="form__label">Group Name</label>
         </div>
     </div>
@@ -193,8 +193,8 @@
             
         </div>
     </div>
-    <div class="btn-create-group" onclick="createGroup()">
-       <button>Create group</button>
+    <div class="btn-create-group">
+        <button onclick="createGroup()">Create group</button>
     </div>
 </div>
 
@@ -363,7 +363,7 @@
 
     .create-group-model {
         position: fixed;
-        top: 50%;
+        top: 70%;
         left: 50%;
         width: 50%;
         height: 500px;
@@ -373,9 +373,11 @@
         border-radius: 3px;
         z-index: 3;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        transition: right .3s ease-in-out, opacity .2s ease-in-out;
+        transition: all .3s ease-in-out;
         transform: translate(-50%, -50%);
         overflow: hidden;
+        opacity: 0;
+        display: none;
     }
 
         .create-group-model .camera-avatar {
@@ -529,6 +531,45 @@
             padding: 0;
         }
 
+    .chat-group {
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+    }
+
+        .chat-group:hover {
+            background-color: #e9ecef;
+        }
+
+        .active-chat {
+            background-color: #77CDFF;
+            color: #fff;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .chat-group .info {
+            display: flex;
+            align-items: center;
+        }
+
+        .chat-group .info .active-user-online {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: #31a24c;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            right: 0;
+            bottom: 2px;
+                
+        }
+
+        .chat-group .info img {
+            border-radius: 50%;
+        }
+
     .chat-user {
         padding: 10px;
         cursor: pointer;
@@ -540,17 +581,17 @@
             background-color: #e9ecef;
         }
 
-        .active-chat {
-            background-color: #77CDFF;
-            color: #fff;
-            border-radius: 4px;
-            font-weight: bold;
-        }
+    .active-chat {
+        background-color: #77CDFF;
+        color: #fff;
+        border-radius: 4px;
+        font-weight: bold;
+    }
 
-        .chat-user .info {
-            display: flex;
-            align-items: center;
-        }
+    .chat-user .info {
+        display: flex;
+        align-items: center;
+    }
 
         .chat-user .info .active-user-online {
             position: absolute;
@@ -561,7 +602,6 @@
             border: 2px solid #fff;
             right: 0;
             bottom: 2px;
-                
         }
 
         .chat-user .info img {

@@ -50,13 +50,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "groupName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Members",
-        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Name": "request",
+        "Type": "ChatAppNETCore.Controllers.apis.CreateGroupRequest",
         "IsRequired": true
       }
     ],
@@ -81,13 +76,29 @@
   {
     "ContainingType": "ChatAppNETCore.Controllers.apis.ChatApiController",
     "Method": "GetMessagesByChatId",
-    "RelativePath": "api/ChatApi/GetMessages/{chatId}",
+    "RelativePath": "api/ChatApi/GetMessageChat/{chatId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "chatId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatAppNETCore.Controllers.apis.ChatApiController",
+    "Method": "GetMessageGroup",
+    "RelativePath": "api/ChatApi/GetMessageGroup/{groupId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
         "Type": "System.Int32",
         "IsRequired": true
       }

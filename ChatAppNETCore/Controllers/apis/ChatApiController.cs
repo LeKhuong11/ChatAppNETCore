@@ -46,8 +46,26 @@ namespace ChatAppNETCore.Controllers.apis
         }
 
 
+        [HttpGet("GetMessageGroup/{groupId}")]
+        public async Task<IActionResult> GetMessageGroup(int groupId)
+        {
+            C_Chat chat = await _context.C_Chats.FindAsync(groupId);
 
-        [HttpGet("GetMessages/{chatId}")]
+            List<C_Message> messages = await Task.Run(() => _context.C_Messages
+                .Where(message => message.ChatId == groupId.ToString())
+                .OrderBy(message => message.CreatedAt)
+                .ToList());
+
+            return Ok(new
+            {
+                Chat = chat,
+                Messages = messages
+            });
+        }
+
+
+
+        [HttpGet("GetMessageChat/{chatId}")]
         public async Task<IActionResult> GetMessagesByChatId(int chatId)
         {
             var messages = await Task.Run(() => _context.C_Messages

@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\js\\connect.js"
     },
     {
+      "Id": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\service.js",
+      "PackagePath": "staticwebassets\\js\\service.js"
+    },
+    {
       "Id": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js"
     },

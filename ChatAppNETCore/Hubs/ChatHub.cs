@@ -84,7 +84,6 @@ namespace ChatAppNETCore.Hubs
             { 
                 ChatId = room,
                 SenderId = userId,
-                ReceiverId = toUserId,
                 Content = message,
                 isRead = false,
                 CreatedAt = DateTime.Now,

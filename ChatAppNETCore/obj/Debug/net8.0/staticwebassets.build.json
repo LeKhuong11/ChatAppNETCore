@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cDxgsLlxtC6nR3hAs4NDkdAs1UK/53hli0cXmgCiFdU=",
+  "Hash": "amRhj3QAOhNkeDsFJtShI7uGzEDLcUpf0pfXf4iDRyQ=",
   "Source": "ChatAppNETCore",
   "BasePath": "_content/ChatAppNETCore",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\connect.js"
+    },
+    {
+      "Identity": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\service.js",
+      "SourceId": "ChatAppNETCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\",
+      "BasePath": "_content/ChatAppNETCore",
+      "RelativePath": "js/service.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\service.js"
     },
     {
       "Identity": "D:\\Workspaces\\C#\\ChatAppNETCore\\ChatAppNETCore\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",

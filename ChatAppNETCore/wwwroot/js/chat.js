@@ -1,5 +1,6 @@
 ﻿"use strict";
 
+
 function sendMessages(room, toUserId, event) {
     event.preventDefault()
     var message = document.getElementById("messageInput");
@@ -29,7 +30,6 @@ function joinRoom(room) {
         return console.error(err.toString());
     });
 }
-
 
 async function markAsRead(chatId, userChat) {
 
@@ -66,20 +66,20 @@ async function openChatRoom(chatId, userId, userName, myId) {
 
 
         try {
-            await fetch(`/api/ChatApi/GetMessages/${chatId}`)
+            await fetch(`/api/ChatApi/GetMessageChat/${chatId}`)
                 .then(response => {
                     return response.json();
                 })
                 .then(messages => {
                     const chatContentDiv = document.getElementById('chat-content');
                     const chatInput = document.querySelector('.chat-input');
-                    const chatWith = document.querySelector('.chat-with');
+                    const chatTitle = document.querySelector('.chat-with');
 
 
                     // Clear Chat content (if any)
                     chatContentDiv.innerHTML = '';
                     chatInput.innerHTML = '';
-                    chatWith.innerHTML = `Chat with ${userName}`;
+                    chatTitle.innerHTML = `Chat with ${userName}`;
 
                     if (!messages || messages.length === 0) {
 
@@ -169,8 +169,8 @@ async function createChat(userId) {
 function createChatRoom(chat) {
     const chatContentDiv = document.getElementById('chat-content');
     const chatInput = document.querySelector('.chat-input');
-    const chatWith = document.querySelector('.chat-with');
-    chatWith.innerHTML = `Chat with ${chat.partner.name}`;
+    const chatTitle = document.querySelector('.chat-with');
+    chatTitle.innerHTML = `Chat with ${chat.partner.name}`;
 
     // Clear Chat content (if any)
     chatContentDiv.innerHTML = '';

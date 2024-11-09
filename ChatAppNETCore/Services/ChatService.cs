@@ -23,7 +23,7 @@ namespace ChatAppNETCore.Services
         public async Task<List<ChatListViewModel>> GetChatsByUserId(string myId)
         {
             var chats = await _context.C_Chats
-                .Where(chat => chat.Members.Contains(myId))
+                .Where(chat => chat.Members.Contains(myId) && !chat.IsGroup)
                 .Select(chat => new ChatListViewModel
                 {
                     Id = chat.Id,
