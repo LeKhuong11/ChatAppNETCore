@@ -1,6 +1,5 @@
 ﻿"use strict";
 
-
 function sendMessages(room, toUserId, event) {
     event.preventDefault()
     var message = document.getElementById("messageInput");
@@ -21,7 +20,6 @@ function sendMessages(room, toUserId, event) {
         return console.error(err.toString());
     });
 }
-    
 
 function joinRoom(room) {
     connection.invoke("JoinRoom", `${room}`).then(() => {
@@ -258,7 +256,7 @@ function offOverlay() {
 //    var user = document.getElementById("userInput").value;
 //    connection.invoke("JoinRoom", room).catch(function (err) {
 //        return console.error(err.toString());
-//    });
+//    });a
 //    event.preventDefault();
 //});
 

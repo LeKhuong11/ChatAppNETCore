@@ -72,16 +72,15 @@ namespace ChatAppNETCore.Hubs
                 _onlineUsers.TryRemove(existingUser.ConnectionId, out _);
                 await Clients.All.SendAsync("userDisconnect", existingUser.UserId);
             }
-
         }
         
-        public async Task SendMessage(string room, string message, string toUserId)
+        public async Task SendMessage(string room, string message, string? toUserId = null)
         {
             string userId = Context.UserIdentifier.ToUpper();
             string userName = Context.User.Identity.Name;
 
             C_Message chatMessage = new C_Message
-            { 
+            {
                 ChatId = room,
                 SenderId = userId,
                 Content = message,
@@ -92,8 +91,8 @@ namespace ChatAppNETCore.Hubs
             _context.C_Messages.Add(chatMessage);
             await _context.SaveChangesAsync();
             await Clients.Group(room).SendAsync("ReceiveMessage", chatMessage);
-          
-            await this.SendNotification(chatMessage, userName, toUserId, room);
+
+            await this.SendNotification(chatMessage, userName, room, toUserId);
         }
 
         public async Task JoinRoom(string room)
@@ -127,7 +126,7 @@ namespace ChatAppNETCore.Hubs
             await Clients.Group(room).SendAsync("LeaveRoomMessage", userName);
         }
 
-        public async Task SendNotification(C_Message message, string senderName, string toUserId, string room)
+        public async Task SendNotification(C_Message message, string senderName, string room, string? toUserId = null)
         {
             C_Notification notification = new C_Notification
             {
@@ -139,17 +138,25 @@ namespace ChatAppNETCore.Hubs
             _context.C_Notification.Add(notification);
             await _context.SaveChangesAsync();
 
-            OnlineUser? isUserAvailable = _onlineUsers.Values.FirstOrDefault(u => u.UserId == toUserId);
+            string userId = Context.UserIdentifier.ToUpper();
 
-            if (isUserAvailable != null)
+            int messagesUnRead = _context.C_Messages
+                .Where(m => m.ChatId == message.ChatId && !m.isRead && m.SenderId == userId)
+                .Count();
+
+            if (!string.IsNullOrEmpty(toUserId))
             {
-                string userId = Context.UserIdentifier.ToUpper();
+                OnlineUser? isUserAvailable = _onlineUsers.Values.FirstOrDefault(u => u.UserId == toUserId);
 
-                int messagesUnRead = _context.C_Messages
-                    .Where(m => m.ChatId == message.ChatId && !m.isRead && m.SenderId == userId)
-                    .Count();
+                if (isUserAvailable != null)
+                {
 
-                await Clients.Client(isUserAvailable.ConnectionId).SendAsync("NotificationMessage", notification, message, senderName, messagesUnRead);
+                    await Clients.Client(isUserAvailable.ConnectionId).SendAsync("NotificationMessage", notification, message, senderName, messagesUnRead);
+                }
+            } else
+            {
+                await Clients.Client(room).SendAsync("NotificationMessage", notification, message, senderName, messagesUnRead);
+                Console.WriteLine("Hiiiiiiiiiiiiiiiiiiiiiiii");
             }
         }
     }

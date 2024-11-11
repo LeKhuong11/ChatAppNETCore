@@ -1,19 +1,11 @@
 ﻿"use strict";
 const userCreateGroup = [];
 
-function joinRoom(room) {
-    connection.invoke("JoinRoom", `${room}`).then(() => {
-
-    }).catch(function (err) {
-        return console.error(err.toString());
-    });
-}
-
-function sendMessages(room, event) {
+function sendMessagesGroup(room, event) {
     event.preventDefault()
     var message = document.getElementById("messageInput");
 
-    connection.invoke("SendMessage", `${room}`, message.value).then(() => {
+    connection.invoke("SendMessage", `${room}`, message.value, null).then(() => {
         const chatContentDiv = document.getElementById('chat-content');
         chatContentDiv.scrollTo({
             top: chatContentDiv.scrollHeight,
@@ -41,14 +33,14 @@ function addUserToGroupCreate(userId, userName) {
         userSelected.setAttribute('id', userId);
 
         userSelected.innerHTML = `
-        <div class="d-flex">
-            <img width="30" height="30" src="/images/avatar-default.jpg" alt="Avatar default" />
-            <p>${userName}</p>
-        </div>
-        <div class="delete-user" onclick="removeUserFromGroupSelected('${userId}')">
-            <i class="fa-regular fa-circle-xmark"></i>
-        </div>
-    `;
+            <div class="d-flex">
+                <img width="30" height="30" src="/images/avatar-default.jpg" alt="Avatar default" />
+                <p>${userName}</p>
+            </div>
+            <div class="delete-user" onclick="removeUserFromGroupSelected('${userId}')">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+        `;
 
         selectedUserList.appendChild(userSelected);
         userCreateGroup.push(userId.toString());
@@ -114,7 +106,6 @@ async function openGroup(groupId) {
             return response.json();
         }) 
         .then(group => {
-            console.log(group)
             const chatContentDiv = document.getElementById('chat-content');
             const chatInput = document.querySelector('.chat-input');
             const chatTitle = document.querySelector('.chat-with');
@@ -143,9 +134,9 @@ async function openGroup(groupId) {
             // HTML nhập tin nhắn
             chatInput.innerHTML += `
                 <div>
-                    <form id="form-message" class="message-input" action="#" onsubmit="sendMessages(${group.chat.id}, event)">
+                    <form id="form-message" class="message-input" action="#" onsubmit="sendMessagesGroup(${group.chat.id}, event)">
                         <input type="text" id="messageInput" placeholder="Type a message..." />
-                        <button type="submit" id="sendMessageButton" onclick="sendMessages(${group.chat.id}, event)">Send</button>
+                        <button type="submit" id="sendMessageButton" onclick="sendMessagesGroup(${group.chat.id}, event)">Send</button>
                     </form>
                 </div>
             `;

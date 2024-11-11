@@ -7,7 +7,6 @@ namespace ChatAppNETCore.Models
         [Key]
         public int Id { get; set; }
 
-        [Required]
         public string ReceiveId { get; set; }
 
         [Required]

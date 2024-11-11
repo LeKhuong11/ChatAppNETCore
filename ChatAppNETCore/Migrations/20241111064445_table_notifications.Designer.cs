@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChatAppNETCore.Migrations
 {
     [DbContext(typeof(ChatAppContext))]
-    [Migration("20241030032923_update-C_Message")]
-    partial class updateC_Message
+    [Migration("20241111064445_table_notifications")]
+    partial class table_notifications
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -69,10 +69,6 @@ namespace ChatAppNETCore.Migrations
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("ReceiverId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SenderId")
                         .IsRequired()

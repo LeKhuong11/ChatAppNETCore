@@ -35,7 +35,7 @@ connection.on("NotificationMessage", (notification, message, senderName, message
     const toastElement = document.getElementById('liveToast');
     const toast = new bootstrap.Toast(toastElement);
     toast.show();
-
+    
     // Mark unread on user chat
     const userChat = document.getElementById(`${notification.senderId.toLowerCase()}`);
     if (userChat.getAttribute('is-open') == 'false') {
